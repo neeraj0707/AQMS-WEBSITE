@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "80065781-d2eb-4c06-ba31-a2fbcc1c13c3"
+      }
+    },
+    "android": {
+      "package": "com.tecsage.aqms_1"
+    }
+  }
+}

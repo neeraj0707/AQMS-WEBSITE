@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Document</title> -->
+    <title>Tecsage Innovations</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../articles/aqi.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">Tecsage Innovation</a>
+        <ul class="nav-links">
+          <li><a href="../airmonitor.html">Air Monitor</a></li>
+          <li><a href="../airpurifier.html">Air Purifier</a></li>
+          <li><a href="../face-mask.html">Learn</a></li>
+          <li><a href="../news.html">News</a></li>
+          <li><a href="../contact-us.html">About Us</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <div class="aqi_container">
+        <h3>What is an Air Quality Index (AQI)?</h3>
+      </div>
+    </div>
+    <div class="extended-image-container">
+      <img src="../assets/AQI.png" alt="Air quality index illustration" />
+    </div>
+
+    <div class="aqi_content">
+      <h3>What is an AQI ?</h3>
+      <p>
+        The Air Quality Index (AQI) is a numerical scale that measures air
+        pollution levels based on concentrations of harmful pollutants like
+        PM2.5, PM10, ozone, CO, SO₂, and NO₂. It categorizes air quality from
+        "Good" (0–50) to "Hazardous" (300+) to indicate potential health
+        impacts.
+      </p>
+
+      <h3>How AQI is Calculated ?</h3>
+      <p>AQI is derived by measuring the concentration of key air pollutants, including:</p>
+        <ul class="aqi_pollutants-list">
+            <li>PM2.5 (particulate matter with a diameter of 2.5 micrometers or less)</li>
+            <li>PM10 (particulate matter with a diameter of 10 micrometers or less)</li>
+            <li>Ozone (O₃)</li>
+            <li>Carbon monoxide (CO)</li>
+            <li>Sulfur dioxide (SO₂)</li>
+            <li>Nitrogen dioxide (NO₂)</li>
+        </ul>    
+
+        <div class="aqi_categories">
+            <h3>AQI Categories & Health Impacts</h3>
+            <p>The AQI scale is divided into six categories, each indicating different health risks:</p>
+
+            <div class="aqi-table-container">
+                <table class="aqi-table">
+                  <thead>
+                    <tr>
+                      <th>AQI Range</th>
+                      <th>Category</th>
+                      <th>Health Advisory</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="aqi-good">
+                      <td>0–50</td>
+                      <td>Good</td>
+                      <td>Air quality is satisfactory, posing little to no risk.</td>
+                    </tr>
+                    <tr class="aqi-moderate">
+                      <td>51–100</td>
+                      <td>Moderate</td>
+                      <td>Acceptable, but sensitive individuals may experience minor discomfort.</td>
+                    </tr>
+                    <tr class="aqi-unhealthy-sensitive">
+                      <td>101–150</td>
+                      <td>Unhealthy for Sensitive Groups</td>
+                      <td>People with asthma, heart disease, or children may be affected.</td>
+                    </tr>
+                    <tr class="aqi-unhealthy">
+                      <td>151–200</td>
+                      <td>Unhealthy</td>
+                      <td>Everyone may begin to experience health effects.</td>
+                    </tr>
+                    <tr class="aqi-very-unhealthy">
+                      <td>201–300</td>
+                      <td>Very Unhealthy</td>
+                      <td>Health warnings; significant risk to all populations.</td>
+                    </tr>
+                    <tr class="aqi-hazardous">
+                      <td>301+</td>
+                      <td>Hazardous</td>
+                      <td>Emergency conditions; serious health impacts.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+
+
+    </div>
+  </body>
+</html>

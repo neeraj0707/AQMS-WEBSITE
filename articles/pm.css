@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.page-wrapper {
+    background-color: #e6f2ff; 
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+
+.PM_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1; 
+    font-size: 30px;
+    text-align: center; 
+    padding: 20px; 
+    margin-bottom: 200px;
+}
+
+.PM_container h3 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.extended-image-container {
+    position: absolute;
+    /* bottom: 0; */
+    top: 264px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 0; /* Between body and content */
+}
+
+.extended-image-container img {
+    width: 52%;
+    height: 500px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+.PM_content {
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto 100px; /* top | horizontal | bottom */
+    width: 70%;
+    /* max-width: 800px;  */
+    z-index: 1;
+    color: black;
+    position: relative;
+    left: 37%;
+    transform: translateX(-50%);
+    padding: 20px; /* add some breathing room */
+    background: rgba(255, 255, 255, 0.8); /* slight white background for readability */
+    border-radius: 8px; /* soft edges */
+}
+.PM_content h3{
+    font-size: 25px;
+    /* padding-bottom: 15px; */
+}
+.PM_content p{
+    letter-spacing: 0.3px;
+    line-height: 27px;
+    font-weight: 500;
+    color: rgb(49, 48, 48);
+    padding-top: 20px;
+}
+.PM_types p {
+    font-size: 16px;
+    padding-bottom: 15px;
+    /* margin-top: 20px; */
+}
+.PM_list{
+    padding-left: 35px;
+    font-size: 16px; 
+    font-weight: 500;
+    color: rgb(49, 48, 48);
+}
+.PM_list li{
+    padding: 8px 0;
+}
+.PM_causes h4{
+    padding-top: 40px;
+    font-size: 20px;
+}
+.PM_sources{
+    padding-left: 35px;
+    padding-top: 15px;
+    font-size: 16px; 
+    font-weight: 500;
+    color: rgb(49, 48, 48);
+}
+.PM_sources li{
+    padding: 8px 0;
+}
+.PM_health_container{
+    padding-top: 50px;
+}
+.PM_health_container h4{
+    font-size: 20px;
+    /* padding-bottom: 15px; */
+}

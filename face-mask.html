@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecsage Innovations</title>
+    <!-- <title>Document</title> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="face-mask.css">
+    <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>  
+
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="assets/tecsage-logo.png" alt="Company Logo" width="170">
+        <!-- <a href="index.html" class="logo">Tecsage Innovation</a> -->
+        <ul class="nav-links">
+            <li><a href="airmonitor.html">Air Monitor</a></li>
+            <li><a href="airpurifier.html">Air Purifier</a></li>
+            <li><a href="face-mask.html">Learn</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact-us.html">About Us</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+    <!-- <div class="learn_container">
+    
+        <div class="learn_content">
+            <div class="learn_left">
+                <h3>Learn about Air Quality</h3>
+                <span>What you need to know about pollution,</span>
+                <span>protecting your health, and more!</span>
+            </div>
+    
+            <div class="learn_right">
+                <dotlottie-player
+                   src="https://lottie.host/9cc7961a-9cae-42db-ad4d-bfa186707dbb/JBUsPGx2FW.lottie"
+                   background="transparent"
+                   speed="1"
+                   style="width: 350px; height: 350px"
+                   loop
+                   autoplay>
+                </dotlottie-player>
+            </div>
+        </div>
+
+        <div class="learn_articles">
+            <h3>Articles</h3>
+            <div class="articles_container">
+                <div class="article_1">
+                    <img class="articles_image" src="./assets/air_pollution.jpg" alt="">
+                    <h4>What is air Pollution?</h4>
+                </div>
+                <div class="article_2">
+                    <img class="articles_image" src="./assets/AQI.png" alt="">
+                    <h4>What is Air Quality Index (AQI)?</h4>
+                </div>
+           
+                <div class="article_3">
+                    <img class="articles_image" src="./assets/PM2.5.jpg" alt="">
+                    <h4>What is PM2.5?</h4>
+                </div>
+                <div class="article_4">
+                    <img class="articles_image" src="./assets/PM10.webp" alt="">
+                    <h4>What is PM10?</h4>
+                </div>
+                <div class="article_5">
+                    <img class="articles_image" src="./assets/TVOC.jpg" alt="">
+                    <h4>What is TVOC?</h4>
+                </div>   
+                <div class="article_6 ">
+                    <img class="articles_image" src="./assets/co2.jpg" alt="">
+                    <h4>What is CO2?</h4> 
+                </div>
+
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <main class="page-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Learn about Air Quality</h1>
+                    <p>What you need to know about pollution,</p>
+                    <p>protecting your health, and more!</p>
+                </div>
+                <div class="hero-animation">
+                    <dotlottie-player
+                       src="https://lottie.host/9cc7961a-9cae-42db-ad4d-bfa186707dbb/JBUsPGx2FW.lottie"
+                       background="transparent"
+                       speed="1"
+                       style="width: 350px; height: 350px"
+                       loop
+                       autoplay>
+                    </dotlottie-player>
+                </div>
+            </div>
+        </section>
+    
+        <!-- <section class="articles-section">
+            <h2>Articles</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <img src="./assets/air_pollution.jpg" alt="Air pollution illustration">
+                    <h3>What is air Pollution?</h3>
+                </article>
+                <article class="article-card">
+                    <img src="./assets/AQI.png" alt="AQI illustration">
+                    <h3>What is Air Quality Index (AQI)?</h3>
+                </article>
+                <article class="article-card">
+                    <img src="./assets/PM2.5.jpg" alt="PM2.5 illustration">
+                    <h3>What is PM2.5?</h3>
+                </article>
+                <article class="article-card">
+                    <img src="./assets/PM10.webp" alt="PM10 illustration">
+                    <h3>What is PM10?</h3>
+                </article>
+                <article class="article-card">
+                    <img src="./assets/TVOC.jpg" alt="TVOC illustration">
+                    <h3>What is TVOC?</h3>
+                </article>
+                <article class="article-card">
+                    <img src="./assets/co2.jpg" alt="CO2 illustration">
+                    <h3>What is CO2?</h3>
+                </article>
+                <article class="article-card">
+                    <img src="./assets/need.jpg" alt="CO2 illustration">
+                    <h3>Why do you measure air pollution?</h3>
+                </article>
+            </div>
+        </section> -->
+
+
+        <section class="articles-section">
+            <h2>Air Quality Articles</h2>
+            <div class="articles-grid">
+                <!-- Updated paths to point to articles/ subfolder -->
+                <a href="articles/air-pollution.html" class="article-card">
+                    <img src="assets/air_pollution.jpg" alt="Air pollution">
+                    <div class="article-info">
+                        <h3>What is Air Pollution?</h3>
+                        <p class="excerpt">See more</p>
+                    </div>
+                </a>
+        
+                <a href="articles/aqi.html" class="article-card">
+                    <img src="assets/AQI.png" alt="AQI chart">
+                    <div class="article-info">
+                        <h3>Understanding AQI</h3>
+                        <p class="excerpt">See more</p>
+                    </div>
+                </a>
+                
+                <a href="articles/pm.html" class="article-card">
+                    <img src="assets/PM2.5.jpg" alt="PM2.5 particles">
+                    <div class="article-info">
+                        <h3>Particulate matter (PM)</h3>
+                        <p class="excerpt">See more</p>
+                    </div>
+                </a>
+                <a href="articles/co2.html" class="article-card">
+                    <img src="assets/co2.jpg" alt=" particles">
+                    <div class="article-info">
+                        <h3>What is CO2 ?</h3>
+                        <p class="excerpt">See more</p>
+                    </div>
+                </a>
+                <a href="articles/prevention.html" class="article-card">
+                    <img src="assets/need.jpg" alt=" particles">
+                    <div class="article-info">
+                        <h3>Preventions and Preacautions</h3>
+                        <p class="excerpt">See more</p>
+                    </div>
+                </a>
+                <a href="articles/io.html" class="article-card">
+                    <img src="assets/PM10.webp" alt=" particles">
+                    <div class="article-info">
+                        <h3>Indoor VS Outdoor Pollution</h3>
+                        <p class="excerpt">See more</p>
+                    </div>
+                </a>
+                <a href="articles/tvoc.html" class="article-card">
+                    <img src="assets/TVOC.jpg" alt=" particles">
+                    <div class="article-info">
+                        <h3>What is TVOC ?</h3>
+                        <p class="excerpt">See more</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        
+    </main>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

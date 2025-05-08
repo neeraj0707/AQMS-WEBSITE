@@ -1,0 +1,120 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.page-wrapper {
+    background-color: #e6f2ff; 
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+
+.air_pollution_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1; 
+    font-size: 40px;
+    text-align: center; 
+    padding: 20px; 
+    margin-bottom: 200px;
+}
+
+.air_pollution_container h3 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.extended-image-container {
+    position: absolute;
+    /* bottom: 0; */
+    top: 264px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 0; /* Between body and content */
+}
+
+.extended-image-container img {
+    width: 52%;
+    height: 500px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+
+
+
+.air_pollution_content {
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto 100px; /* top | horizontal | bottom */
+    width: 70%;
+    /* max-width: 800px;  */
+    z-index: 1;
+    color: black;
+    position: relative;
+    left: 37%;
+    transform: translateX(-50%);
+    padding: 20px; /* add some breathing room */
+    background: rgba(255, 255, 255, 0.8); /* slight white background for readability */
+    border-radius: 8px; /* soft edges */
+}
+.air_pollution_content p{
+    letter-spacing: 0.3px;
+    line-height: 27px;
+    font-weight: 500;
+    color: rgb(31, 30, 30);
+}
+.air_pollution_types h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #0a0a0a;
+    margin-top: 20px; /* add some space above */
+
+}
+.air_pollution_types h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #0a0a0a;
+    margin-top: 20px; /* add some space above */
+}
+.air_pollution_effects{
+    margin-top: 50px;
+}
+.air_pollution_effects h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #0a0a0a;
+    margin-top: 20px; /* add some space above */
+}
+.air_pollution_effects p{
+    margin-bottom: 20px;
+}
+.air_pollution_preventation{
+    margin-top: 20px;
+    
+}
+.air_pollution_preventation h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
