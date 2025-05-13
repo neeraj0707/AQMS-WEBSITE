@@ -709,7 +709,7 @@ tr:hover {
   padding-top: 80px;
   padding-bottom: 50px;
   height: auto;
-  background-color: #f9f9f9; /* Light background for section */
+  background-color: #e6f5fc; /* Light background for section */
 }
 
 .feature-cards-section h2 {
@@ -725,6 +725,9 @@ tr:hover {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  border: 3px solid rgb(88, 164, 226);
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 /* Carousel Item */
