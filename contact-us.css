@@ -523,26 +523,88 @@
         font-size: 18px;
     }
 }
-.contact_container{
+/* .contact_container{
     display: flex;
     margin: auto;
-    /* justify-content: center; */
     justify-content: space-between; 
     width: 75%;
     margin-top: 100px;
     padding-bottom: 60px;
-
-    /* gap: 100px; */
+} */
+.contact_container {
+    position: relative; /* Needed for absolute positioning of animation */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 75%;
+    margin: 100px auto 60px;
+    gap: 50px;
 }
-.contact_info{
+
+/* Lottie animation as overlay */
+.contact_container > dotlottie-player {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it stays above other content */
+    opacity: 0.6; /* Make it semi-transparent so content is visible */
+    pointer-events: none; /* Allow clicks to pass through to form */
+    width: 1000px;
+    height: 500px;
+}
+
+.contact_info, #contact-form-container {
+    position: relative;
+    z-index: 1; /* Content above the background */
+}
+
+/* Rest of your styles remain the same */
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact-form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact_container > dotlottie-player {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* .contact_info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    /* margin-top: 50px; */
     width: 500px;   
     text-align: left;
+    padding: 20px;
+} */
+
+.contact_info h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: #0a0a0a;
+    /* margin-bottom: 20px; */
 }
 .contact_info p{
     font-size: 20px;
@@ -564,17 +626,15 @@
     gap: 20px;
 }
 
-#contact-form-container {
-    /* margin-top: 200px; */
+/* #contact-form-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 500px;  
     width: 100%;
-    /* margin: auto; */
-    /* margin-top: 130px; */
-}
+} */
+
 
 h2 {
     margin-top: 0;
