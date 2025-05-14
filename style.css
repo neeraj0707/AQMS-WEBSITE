@@ -131,6 +131,18 @@ header h2{
     }
   }  
 
+  @media (max-width:900px) {
+  .nav-links{
+    display: flex;
+    gap: 20px !important;
+  }
+  .nav-links a{
+    font-size: 20px !important;
+  }
+  
+}
+
+
 
   header {
     padding-bottom: 30px;
@@ -1684,6 +1696,17 @@ tr:hover {
     }
   } */
 
+  @media (max-width: 400px) {
+    .feature-card2-left p{
+      line-height: 1.7rem;
+      margin-top: 28px;
+    }
+    .feature-card3-left p{
+      line-height: 1.9rem;
+      margin-top: 28px;
+    }
+  }
+
 
   /* Mobile First Approach - Base styles for small screens */
 @media (max-width: 576px) {
@@ -1785,7 +1808,7 @@ tr:hover {
   .feature-card2-right img,
   .feature-card3-right img {
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
   }
   
   /* Mobile app section */
@@ -1957,5 +1980,9 @@ tr:hover {
     padding: 8px 20px;
     font-size: 0.9rem;
   }
+  .feature-card1-left p{
+    line-height: 1.7rem;
+  }
 
 }
+
