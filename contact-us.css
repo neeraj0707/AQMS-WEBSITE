@@ -544,11 +544,11 @@
 /* Lottie animation as overlay */
 .contact_container > dotlottie-player {
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 20%;
+    left: 31%;
     transform: translate(-50%, -50%);
     z-index: 10; /* Ensure it stays above other content */
-    opacity: 0.6; /* Make it semi-transparent so content is visible */
+    opacity: 0.6 ; /* Make it semi-transparent so content is visible */
     pointer-events: none; /* Allow clicks to pass through to form */
     width: 1000px;
     height: 500px;
