@@ -503,8 +503,11 @@ tr:hover {
   }
 
   .services-section p.lead {
-    color: #6c757d;
-    margin-bottom: 30px;
+    color: #217bca;
+    /* margin-bottom: 30px; */
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 40px 55px;
   }
 
   .card p{color: gray;
@@ -595,13 +598,13 @@ tr:hover {
   } 
 
   .headline {
-      font-size: 2.5rem;
-      font-weight: 200;
+      font-size: 2.9rem;
+      font-weight: 600;
       padding-bottom: 60px;
   }
 
   .description {
-      font-size: 1.2rem;
+      font-size: 1.7rem;
       max-width: 800px;
       margin: 0 auto;
       font-weight: 300;
@@ -728,7 +731,7 @@ tr:hover {
   padding-bottom: 50px;
   font-weight: 800;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   color: #333;
 }
 
@@ -833,16 +836,33 @@ tr:hover {
 
   
 } */
+ .feature-card1-left h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #444;}
+  .feature-card2-left h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #444;}
+  .feature-card3-left h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #444;}
 
 .feature-card1-left p{
   margin-top: 2rem;
   line-height: 2rem;
+  font-size: 1.2rem;
 }
 .feature-card2-left p{
   line-height: 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 .feature-card3-left p{
   line-height: 2.2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 .feature-card1-right img{
    /* max-width: 50%;  */
@@ -853,11 +873,13 @@ tr:hover {
   width: 300px;
   height: auto; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: adds a subtle rounded effect */
+  margin-top: 100px;
 }
 .feature-card3-right img{
   /* max-width: 60%;  */
   width: 300px;
   height: auto;
+  margin-top: 50px;
 }
 .feature-card1 {
   display: flex;
@@ -913,7 +935,7 @@ tr:hover {
   flex: 1;
   /* max-width: 50%; */
   margin-left: 20px;
-  font-size: 21px;
+  font-size: 31px;
   font-weight: 500;
   margin-bottom: 38px;
   color: rgb(102, 101, 101);
@@ -951,6 +973,7 @@ tr:hover {
 .mobile_desc p{
   padding-top: 20px;
   font-weight: 500;
+  font-size: 1.3rem;
   color: #5c5b5a;
 }
 .mobile_desc h3{
@@ -1278,8 +1301,8 @@ tr:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  max-width: 600px;
+  /* margin-left: 30px; */
+  /* max-width: 600px; */
 }
 
 
@@ -1293,7 +1316,7 @@ tr:hover {
 }
 
 .indoor-air-quality h2 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin-bottom: 30px;
 }
 
@@ -1301,18 +1324,24 @@ tr:hover {
   /* max-width: 800px; */
   margin: 0 auto 40px;
   padding: 20px;
-  background-color: #111;
+  background-color: #319af0;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .iaq-stats h3, .iaq-reasons h3, .iaq-facts h3 {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   margin-bottom: 15px;
-  color: #00bfff;
+  color: #0c0c0c;
+  font-weight: 600;
+}
+.iaq-stats p{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
-.iaq-reasons ol, .iaq-facts ul {
+.iaq-reasons ul, .iaq-facts ul {
   text-align: left;
   padding-left: 20px;
   line-height: 1.6;
@@ -1320,6 +1349,7 @@ tr:hover {
 
 .iaq-reasons li, .iaq-facts li {
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .gs-reveal {
@@ -1429,33 +1459,32 @@ tr:hover {
   text-decoration: none;
 }
 
+/* Hero section */
+.containers_section{
+  background-image: url('assets/dotted_bg_1.jpg');
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
 
 .containers {
   display: flex;
-  background-image: url('assets/dotted_bg_1.jpg');
-  /* flex-direction: column; */
-  /* flex-direction: row;  */
-  justify-content: space-between; /* Space between columns */
+  flex-direction: column;
+  justify-content: space-between; 
   align-items: center;
-  /* padding-top: 50px; */
-  /* padding: 40px; */
-  width: 80%;
+  width: 90%;
   margin: auto;
   height: 90vh;
-  /* padding-top: 6rem; */
-  gap: 50px; /* gap between the sections */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-.containers_section{
-  background-image: url('assets/dotted_bg_1.jpg');
-  margin-top: 3.2rem;
+  gap: 50px; 
+  flex-wrap: wrap; 
+  padding: 2rem 1rem;
+  padding-top: 5rem !important;
 }
 .text-section {
-  flex: 1; /* Take up available space */
-  /* text-align: center; */
-  /* padding: 0px 2rem; */
+  flex: 1; 
+  text-align: left;
+  width: 40%;
 }
-
 .text-section h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -1463,12 +1492,6 @@ tr:hover {
   text-align: left;
   font-family: "Figtree", sans-serif;
 }
-
-.text-section h1 .text-primary {
-  color: #007bff; /* Primary color */
-  font-family: "Figtree", sans-serif;
-}
-
 .text-section p {
   margin-top: 50px;
   font-size: 1.4rem;
@@ -1477,6 +1500,27 @@ tr:hover {
   font-weight: 500;
   font-family: "Figtree", sans-serif;
 }
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+.image-section {
+  flex: 1; /* Take up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-section img {
+  /* max-width: 100%; */
+  /* height: 100%; */
+  width: 100%; 
+}
+
+.text-section h1 .text-primary {
+  color: #007bff; /* Primary color */
+  font-family: "Figtree", sans-serif;
+}
+
 
 .btn-primary {
   margin-top: 10px;
@@ -1499,36 +1543,92 @@ tr:hover {
   background-color: #0056b3;
 }
 
-.image-section {
-  flex: 1; /* Take up available space */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slider-container {
+  width: 40%;
+  max-width: 1000px; /* Adjust based on your design */
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  margin: auto;
+  display: grid;
+  place-items: center;
 }
 
-.image-section img {
-  /* max-width: 100%; */
-  height: 100%;
-  width: 100%; 
+.slider-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  /* width: max-content; */
+   width: calc(200px * 8); 
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 4));
+  }
+}
+.slide-p{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+ .slide-p img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.slide-p img:hover{
+  transform: translateZ(20px);
+}
+
+.slider-container::before,
+.slider-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+}
+.slider-container::before{
+  left: 0;
+  top: 0;
+}
+.slider-container::after{
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+
 
 .services-section {
-  max-width: 1200px;
+  /* max-width: 1141px; */
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 2rem;
 }
-
+.services-header{
+  width: 100%;
+}
 .services-header .subtitle {
   color: #234982;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 4rem;
 }
 
 .services-header h2 {
-  font-size: 32px;
+  font-size: 3rem;
   margin-bottom: 15px;
 }
 
@@ -1541,7 +1641,7 @@ tr:hover {
 .services-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 55px;
+  gap: 95px;
   justify-content: center;
 }
 
@@ -1571,13 +1671,14 @@ tr:hover {
 
 
 .service-card h5 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .service-card p {
-  font-size: 16px;
-  color: #666;
+  font-size: 20px;
+  color: #3a3838;
   margin-bottom: 15px;
 }
 
@@ -1736,38 +1837,11 @@ tr:hover {
     font-size: 1.2rem;
   }
   
-  /* Hero section */
-  .containers_section {
-    margin-top: 2.5rem;
-  }
   
-  .containers {
-    flex-direction: column;
-    height: auto;
-    padding: 2rem 1rem;
-    gap: 25px;
-    width: 100%;
-    padding-top: 5rem !important;
-  }
   
-  .text-section h1 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
+
+
   
-  .text-section p {
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
-  .image-section img {
-    width: 100%;
-    height: auto;
-  }
-  .text-section{
-    text-align: left;
-  }
   /* Services section */
   .services-section {
     padding: 2rem 2.3rem;
@@ -1887,6 +1961,7 @@ tr:hover {
   .floater-text .headline {
     font-size: 1.5rem;
     padding-bottom: 2rem;
+ 
   }
   
   .floater-text .description {
@@ -1936,7 +2011,7 @@ tr:hover {
 /* Tablet adjustments (576px - 768px) */
 @media (min-width: 576px) and (max-width: 768px) {
   .containers {
-    flex-direction: column;
+    /* flex-direction: column; */
     height: auto;
     padding: 2rem;
   }
@@ -1985,4 +2060,6 @@ tr:hover {
   }
 
 }
+
+
 
