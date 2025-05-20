@@ -21,12 +21,9 @@
   <script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
                    
-<script
-  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-  type="module"
-></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 
   <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
@@ -61,39 +58,33 @@
          
   </style>
 
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&display=swap" rel="stylesheet">
-</head>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+  </head>
 
 <body>
   <nav class="navbar">
     <!-- <a href="index.html" class="logo">Tecsage Innovation</a> -->
    
-     <a href="index.html"><img src="assets/tecsage-logo.png" alt="Tecsage Innovations Logo" width="170">
-
-     </a>
+     <a href="index.html"><img src="assets/tecsage-logo.png" alt="Tecsage Innovations Logo" width="170"></a>
      <h1 class="visually-hidden">Tecsage Innovations Pvt. Ltd.</h1> <!-- this keeps it SEO-friendly but hidden visually -->
-    <ul class="nav-links">
-      <li><a href="airmonitor.html">Air Monitor</a></li>
-      <li><a href="airpurifier.html">Air Purifier</a></li>
-      <li><a href="face-mask.html">Learn</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact-us.html">About Us</a></li>
-
-   
-    </ul>
+     <ul class="nav-links">
+        <li><a href="airmonitor.html">Air Monitor</a></li>
+        <li><a href="airpurifier.html">Air Purifier</a></li>
+        <li><a href="face-mask.html">Learn</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact-us.html">About Us</a></li>
+     </ul>
     <div class="hamburger" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </nav>
-
-
 
   <!-- <header>
     <h2>Explore air quality</h2>
@@ -109,7 +100,6 @@
   </header> -->
 
   
-  
    <!-- <div id="windy-widget">
        <iframe
            id="windy-frame"
@@ -120,7 +110,6 @@
        </iframe>
    </div> -->
 
-  
 
    <!-- <div id="map"></div> -->
 
@@ -141,9 +130,9 @@
           </button>
         </div>
         
-        <!-- <div class="image-section" id="nature_inspired_inovation"> -->
-          <!-- <img src="assets/h-car.png" alt="Tecsage Technovations"> -->
-            <div class="slider-container">
+        <div class="image-section" id="nature_inspired_inovation">
+          <img src="assets/h-car.png" alt="Tecsage Technovations">
+            <!-- <div class="slider-container">
                <div class="slider-track">
                 <div class="slide-p">
                   <img src="assets/h-car.png" alt="Tecsage Technovations">
@@ -157,61 +146,62 @@
                <div class="slide-p">
                  <img src="assets/101.png" alt="Innovative Technology">
                </div>
+
+               <div class="slide-p"><img src="assets/h-car.png" alt="Tecsage Technovations"></div>
+  <div class="slide-p"><img src="assets/3.png" alt="Nature Inspired Design"></div>
+  <div class="slide-p"><img src="assets/d_u_2 (2).png" alt="Sustainable Solutions"></div>
+  <div class="slide-p"><img src="assets/101.png" alt="Innovative Technology"></div>
                 
               </div>
-            </div>
-        <!-- </div> -->
+            </div> -->
+        </div>
       </div>
-      
     </div>
     
-  <section class="indoor-air-quality">
+    <section class="indoor-air-quality">
     <h2 class="title">Why Indoor Air Quality Matters?</h2>
 
     <div class="indoor_container">
 
     <dotlottie-player
     class="indoor_animation"
-  src="https://lottie.host/afd9f14f-aa76-4afa-bf3b-c14a25777e04/0Es6ZA6Cpb.lottie"
-  background="transparent"
-  speed="1"
-   
-  loop
-  autoplay
-></dotlottie-player>
+    src="https://lottie.host/afd9f14f-aa76-4afa-bf3b-c14a25777e04/0Es6ZA6Cpb.lottie"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay></dotlottie-player> 
 
-<div class="indoor_container_content">
+    <div class="indoor_container_content">
   
     <div class="iaq-stats gs-reveal">
       <h3>Indoor Air Quality</h3>
-      <p><strong>90%</strong> of our lives spent indoors</p>
-      <p><strong>2–5x</strong> more pollution indoors than outdoors</p>
+      <p class="indoor-text"><strong>90%</strong> of our lives spent indoors</p>
+      <p class="indoor-text"><strong>2–5x</strong> more pollution indoors than outdoors</p>
     </div>
   
     <div class="iaq-reasons gs-reveal">
       <h3>Reasons:</h3>
-      <ul>
-        <li>Most indoor spaces especially at <strong>Home, Offices and Educational institutes</strong> lack <strong>real-time feedback</strong> about air quality.</li>
+      <ul class="indoor-text">
+        <li >Most indoor spaces especially at <strong>Home, Offices and Educational institutes</strong> lack <strong>real-time feedback</strong> about air quality.</li>
         <li>Humans cannot see harmful gases like <strong>CO₂, TVOCs</strong>, or fine dust (<strong>PM2.5, PM10</strong>), so they cannot act until they know the air quality.</li>
       </ul>
     </div>
   
     <div class="iaq-facts gs-reveal">
       <h3>3 Things You Must Know</h3>
-      <ul>
-        <li><strong>2 in 5</strong> people suffer from allergies caused by these substances.</li>
-        <li>We consume nearly <strong>8 times</strong> more air than food.</li>
-        <li>Modern buildings often do <strong>not allow enough fresh air</strong> to circulate.</li>
+      <ul class="indoor-text">
+        <li ><strong>2 in 5</strong> people suffer from allergies caused by these substances.</li>
+        <li >We consume nearly <strong>8 times</strong> more air than food.</li>
+        <li >Modern buildings often do <strong>not allow enough fresh air</strong> to circulate.</li>
       </ul>
     </div>
 
-</div>
+    </div>
 
     </div>
-  </section>
+    </section>
     
   </main>
-
 
   <div class="services-section">
     <div class="services-header">
@@ -226,14 +216,14 @@
         <img src="assets/s1.png" alt="AQI Monitoring">
         <!--change is css file object file -->
         <h5>AQI Monitoring</h5>
-        <p>Precise indoor air quality monitoring using AQMS technology, tracking pollutants like PM2.5, VOCs, and CO₂.</p>
+        <p>Precise indoor air quality data monitoring using AQMS technology, tracking pollutants like PM2.5, VOCs, and CO₂.</p>
         <a href="#">Read more</a>
       </div>
   
       <!-- Card 2 -->
       <div class="service-card">
-        <img src="assets/data_insights.jpeg" alt="Data Insights" i
-        style="object-fit: cover;">
+        <img src="assets/D2.jpg" alt="Data Insights" 
+        style="object-fit: contain;">
         <h5>Data Insights</h5>
         <p>Detailed air quality reports and analysis to help identify trends and improve your spaces.</p>
         <a href="#">Read more</a>
@@ -272,11 +262,7 @@
       <span class="float-icon-1">Humidity</span>
     </div>
   </div>
-               
-
-  
-
-  
+             
 
 <!-------------------------------------------------------------------------------------------->
 <div class="feature-cards-section">
@@ -320,7 +306,7 @@
               <p>Air quality measurement involves monitoring pollutants like PM2.5, PM10, NO2, O3, and CO to assess the safety of the air we breathe. Sensors collect real-time data, which is processed to calculate the Air Quality Index (AQI). This index helps categorize air quality into levels such as Good, Moderate, or Hazardous. Accurate measurement ensures timely updates for health and safety awareness.</p>
             </div>
             <div class="feature-card3-right">
-                <img src="./assets/Untitled design (1).png" alt="" class="card3-slider">
+                <img src="./assets/Untitled design (2).png" alt="" class="card3-slider">
             </div>
         </div>
 
@@ -340,11 +326,10 @@
 </div>
 
 
-
 <!-------------------------------------------------------------------------------------------->
 
 <div class="mobile_container"> 
-<div class="mobile_app_container">
+   <div class="mobile_app_container">
   <div class="mobile_heading animate-fadeInUp">
 
     <dotlottie-player
@@ -387,10 +372,8 @@
          <img src="./assets/website _photo.png" alt="">
     </div>
   </div>
+    </div>
 </div>
-</div>
-
-
 
 
 <!--------------------------------------------------------------------------------------------------------------->
@@ -410,7 +393,6 @@
     </div>
   </div>
 </div>
-
 
 
   <footer class="px-5 py-19">
@@ -476,7 +458,6 @@
       </ul>
     </div>
   </footer>   
-
 
 
 

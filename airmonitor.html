@@ -15,6 +15,15 @@
   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
   type="module"
 ></script>
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+
+<!-- Include the ThreeSixty.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
+
+
 </head>
 <body> 
     <nav class="navbar">
@@ -45,7 +54,11 @@
                 <p id="banner-text-p">Monitor, Evaluate, and Manage Your Air Quality with Precision Tools.</p>
             </div>
             <div class="main-images">
-                <img src="assets/101.png" alt="">
+                <!-- <img src="assets/m1_.png" alt=""> -->
+                 <!-- <div id="product-spin"></div> -->
+                   <!-- <div id="threesixty"></div> -->
+                    <div id="threesixty"></div>
+    
             </div>
         </div>
 
@@ -67,7 +80,7 @@
     </section> 
 
 
-    <main class="air-monitor-content">
+     <main class="air-monitor-content">
 
         <div class="indoor-air-monitor" data-aos="fade-up">
             <div class="indoor-air-monitor-left" data-aos="fade-up">
@@ -79,14 +92,18 @@
             </div>
             <div class="indoor-air-monitor-right" data-aos="fade-left">
                 <img src="./assets/aqms3_pointing.png" alt="">
+                  
             </div>
         </div>
+        </main> 
         
+      
+      
         <section class="pollutants">
             <div class="upper-section">
                 <p>The inner air quality monitors make it easy to understand what's in your air</p>
             </div>
-            <div class="lower-section">
+            <!-- <div class="lower-section">
                 <div class="lower-pollutant">
                     <img src="./assets/AQI.webp" alt="">
                     <span>AQI</span>
@@ -117,11 +134,81 @@
                 </div>
 
                 
-            </div>  
+            </div>   -->
+            
+            <div class="scroller-wrapper">
+  <div class="lower-section">
+    <!-- Duplicated content for infinite scroll effect -->
+    <div class="scroll-content">
+      <div class="lower-pollutant">
+        <img src="./assets/AQI.webp" alt="">
+        <span>AQI</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/PM1.avif" alt="">
+        <span>TVOC</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/PM2_5.webp" alt="">
+        <span>PM2.5</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/PM10.webp" alt="">
+        <span>PM10</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/CO2.webp" alt="">
+        <span>CO2</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/Temperature.webp" alt="">
+        <span>Temperature</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/Humidity.webp" alt="">
+        <span>Humidity</span>
+      </div>
+    </div>
+
+    <!-- Duplicate for seamless looping -->
+    <div class="scroll-content">
+      <div class="lower-pollutant">
+        <img src="./assets/AQI.webp" alt="">
+        <span>AQI</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/PM1.avif" alt="">
+        <span>TVOC</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/PM2_5.webp" alt="">
+        <span>PM2.5</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/PM10.webp" alt="">
+        <span>PM10</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/CO2.webp" alt="">
+        <span>CO2</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/Temperature.webp" alt="">
+        <span>Temperature</span>
+      </div>
+      <div class="lower-pollutant">
+        <img src="./assets/Humidity.webp" alt="">
+        <span>Humidity</span>
+      </div>
+    </div>
+  </div>
+</div>
+
         </section>
         
-        <section class="pm25">
-                <h2>PM2.5 Air Quality Monitor </h2>
+        <section class="pm25-container">
+              <section class="pm25">
+                <h2> Air Quality Monitor Key Features </h2>
                 <div class="pm25-content">
     
                     <div class="pm25-left">
@@ -138,7 +225,7 @@
                     </div>
     
                     <div class="animated-circle">
-                        <img src="./assets/101.png" class="center-image" alt="">
+                        <img src="./assets/m1_.png" class="center-image" alt="">
                     </div>
 
                     
@@ -161,9 +248,11 @@
                     </div>
                 </div>
     
+              </section>
         </section>
+      
         
-    </main>
+    
 
     <section class="product-list">
         <section class="product_description">
@@ -178,14 +267,15 @@
                     <p class="pea">Monitor your environment in real-time with our advanced AQMS featuring Temperature, CO₂, and Humidity sensors.
                         Equipped with USB-C power for seamless smart integration and accurate air quality tracking</p>
                         <!-- <h2>₹ 9,999</h2> -->
-                      <a href="contact-us.html">Buy now</a>
+                      <a href="contact-us.html" ><button class="product-button">Buy now</button></a>
+                     
                 </div>
             </section>
            
     
             <section class="product_2">
                 <div class="product_2_left">
-                    <img src ="assets/aqms_not_wifi.png" alt ="image found">
+                    <img src ="assets/aqms_without_wifi_2.png" alt ="image found">
                    
                 </div>
                
@@ -194,7 +284,8 @@
                 <h3>Indoor Air Quality Monitoring System</h3>
                 <p  class="pea">The IAQMS is a comprehensive air quality monitoring system designed to provide real-time data on various air pollutants. It is equipped with advanced sensors that measure  CO2, PM2.5, PM10, TVOCs, Temp., Relative Humidity and other harmful substances in the air. The system is user-friendly and can be easily integrated into existing infrastructure.</p>
                 <!-- <h2>₹ 14,999</h2> -->
-                <a href="contact-us.html">Buy now</a>
+                <!-- <a href="contact-us.html">Buy now</a> -->
+                  <a href="contact-us.html" ><button class="product-button">Buy now</button></a>
                 </div>
                 
                 
@@ -211,13 +302,14 @@
                         Wi-Fi connectivity allows easy integration with IoT dashboards for live air quality insights.
                         It is equipped with advanced sensors that measure CO2, PM2.5, PM10, TVOCs, Temp., Relative Humidity, Wi-Fi, USB.</p>
                         <!-- <h2>₹ 19,999</h2> -->
-                        <a href="contact-us.html">Buy now</a>
+                        <!-- <a href="contact-us.html">Buy now</a> -->
+                          <a href="contact-us.html" ><button class="product-button">Buy now</button></a>
                 </div>
             </section>
 
             <section class ="product_4">
                 <div class="product_4_left">
-                    <img src ="assets/d4.png" alt ="image found">
+                    <img src ="assets/aqms-4.png" alt ="image found">
                 </div>
                 <div class="product_4_right">
                     <h1 class="ph">Prana 720</h1>
@@ -226,7 +318,8 @@
                         Wi-Fi connectivity allows easy integration with IoT dashboards for live air quality insights.
                         It is equipped with advanced sensors that measure CO2, PM2.5, PM10, TVOCs, Temp., Relative Humidity, Wi-Fi, USB.</p>
                         <!-- <h2>₹ 19,999</h2> -->
-                        <a href="contact-us.html">Buy now</a>
+                        <!-- <a href="contact-us.html">Buy now</a> -->
+                          <a href="contact-us.html" ><button class="product-button">Buy now</button></a>
                 </div>
             </section>
             
@@ -235,6 +328,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
     <script>
     AOS.init({
         duration: 1000,  // Animation duration in milliseconds
@@ -245,6 +339,49 @@
     </script>
 
 <script src="script.js"></script>
+
+
+ <script>
+  // Create an array of image paths
+  const imagePaths = [];
+  
+  for (let i = 1; i <= 35; i++) {
+    imagePaths.push(`assets/images/i${i}.png`);
+  }
+
+  // Initialize ThreeSixty
+  const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+    image: imagePaths,
+    width: 570,
+    height: 440,
+    draggable: true,
+    swipeable: true
+  });
+
+  // Start rotating
+  // threesixty.play();
+</script>
+
+<!-- <script>
+  const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+  // image: 'https://s3.eu-central-1.amazonaws.com/threesixty.js/watch.jpg',
+  image: 'assets/product_3d.png',
+  width: 570,
+  height: 440,
+  count: 31,
+  perRow: 3,
+  speed: 200,
+
+});
+
+threesixty.play();
+</script> -->
+
+
+
+
+
+
 
 </body>
 </html>

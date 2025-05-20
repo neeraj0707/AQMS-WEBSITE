@@ -144,7 +144,7 @@ header h2{
 
 
 
-  header {
+header {
     padding-bottom: 30px;
     align-items: center;
     display: flex;
@@ -1339,6 +1339,7 @@ tr:hover {
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: #fff;
+  font-weight: 100;
 }
 
 .iaq-reasons ul, .iaq-facts ul {
@@ -1350,6 +1351,7 @@ tr:hover {
 .iaq-reasons li, .iaq-facts li {
   margin-bottom: 10px;
   font-size: 1.5rem;
+  font-weight: 100;
 }
 
 .gs-reveal {
@@ -1558,7 +1560,7 @@ tr:hover {
   display: flex;
   animation: scroll 20s linear infinite;
   /* width: max-content; */
-   width: calc(200px * 8); 
+   width: calc(300px * 8); 
 }
 @keyframes scroll {
   0% {
@@ -1570,7 +1572,7 @@ tr:hover {
 }
 .slide-p{
   height: 200px;
-  width: 200px;
+  width: 300px;
   display: flex;
   align-items: center;
   padding: 15px;

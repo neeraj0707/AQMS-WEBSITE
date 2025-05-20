@@ -320,6 +320,16 @@
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     text-align: center;
 }
+.service_card7 {
+    background: white;
+    padding: 20px ;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    text-align: center;
+}
 
 .service_card1 img {
     width:210px;
@@ -371,6 +381,14 @@
     object-fit: contain;
 
 }
+.service_card7 img {
+    width:180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    object-fit: contain;
+
+}
 /* .service_card h3 {
     font-size: 1.4em;
     color: black;
@@ -415,6 +433,10 @@
     transform: translateY(-10px);
     
 
+}
+.service_card7:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 

@@ -27,7 +27,7 @@
 }
 #banner-text-p {
     padding-top: 30px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     font-weight: 500;
     color: rgb(24, 24, 24);
@@ -141,7 +141,7 @@
 }
 
 #banner-text-p {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     opacity: 0.9;
     line-height: 1.6;
 }
@@ -182,9 +182,6 @@
         font-size: 1 rem;
     }
 
-    #banner-text-p {
-        font-size: 1.2rem;
-    }
 
     .main-images img {
         max-height: 250px;
@@ -257,10 +254,10 @@
     font-weight: 600;
 }
 .indoor-air-monitor-left p{
-    color: rgb(14, 13, 13);
-    font-size: 18px;    
-    font-weight: 500 ;
-    line-height: 28px;
+    color: black;
+    font-size: 1.6rem;    
+    font-weight: 300 ;
+    line-height: 33px;
     letter-spacing: 1px;
                                                                                                                                                                                                                                                          ;
 }
@@ -288,7 +285,8 @@
 }
 .indoor-air-monitor-right img{
     width: 80%;
-}
+} 
+
 @media (max-width:674px){
     .indoor-air-monitor-right{
         width: 300px;
@@ -405,21 +403,24 @@
 
 .pollutants {
     padding-top: 150px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     margin: 0 auto;
+    width: 90%;
 }
 
 .upper-section {
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 .upper-section p {
-    font-size: 25px; 
+    font-size: 3rem; 
     font-weight: 400;
     color: rgb(60, 60, 60);
 }
 
-.lower-section {
+/* .lower-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -435,17 +436,64 @@
 }
 
 .lower-pollutant img {
-    width: 60px; 
+    width: 100px; 
     height: auto;
     margin-bottom: 10px;
 }
 
 .lower-pollutant span {
-    font-size: 16px;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: 600;
     color: rgb(60, 60, 60);
+} */
+
+.scroller-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 50px;
 }
+
+.lower-section {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.scroll-content {
+  display: flex;
+}
+
+.lower-pollutant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  margin: 0 15px;
+}
+
+.lower-pollutant img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.lower-pollutant span {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(60, 60, 60);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 
 @media (max-width: 768px) {
@@ -495,7 +543,10 @@
 }
 
 
-
+.pm25-container{
+    
+    background-color: #dceef8;
+}
 
 
 .pm25 {
@@ -506,11 +557,13 @@
     align-content: center;
     padding-top: 100px;
     padding-bottom: 150px;
+    width: 80%;
+    margin: auto;
     
 }
 
 .pm25 h2 {
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     font-weight: 400;
 }
@@ -537,18 +590,20 @@
     margin-top: 40px;
 }
 .pm25-left-content img, .pm25-right-content img {
-    width: 40px;
+    width: 60px;
 }
 
 .pm25-left-content p, .pm25-right-content p {
     padding-top: 10px;
-    line-height: 23px;
+    line-height: 30px;
     color: #403e3e;
+    font-size: 1.3rem;
 }
 
 .pm25-left-content h3, .pm25-right-content h3 {
-    color: rgb(67, 65, 65);
+    color: rgb(10, 10, 10);
     font-weight: 500;
+    font-size: 2rem;
 }
 
 
@@ -707,6 +762,21 @@
     100% { transform: translateY(0px); }
   }
 
+.product-button{
+    padding: 8px 22px;
+    margin-top: 20px;
+    border-radius: 55px;
+    background-color: rgba(29, 148, 29, 0.89);
+    color: white;
+   font-size: 1.3rem;
+    border: none;
+}  
+.product-button:hover{
+    cursor: pointer;
+    background-color: rgb(14, 92, 14);
+}
+
+
 
    
 .product_description {
@@ -760,6 +830,9 @@
     max-height: 250px;
     object-fit: contain;
     filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04));
+}
+.product_4_left img{
+    width: 300px;
 }
 
 
@@ -885,8 +958,11 @@
     padding-top: 1rem;
 }
 .pea{
-    line-height: 1.5rem;
-    letter-spacing: 1px;                         
+    line-height: 1.8rem;
+    letter-spacing: 1px; 
+    font-weight: 100;
+    font-size: 1.2rem;  
+    color: black;                      
 }
 .ph{
     font-size: 2.1rem;
