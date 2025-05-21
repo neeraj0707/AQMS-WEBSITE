@@ -242,6 +242,7 @@
     display: flex;
     gap: 80px; 
     margin: auto;
+    padding-top: 30px;
 }
 .indoor-air-monitor-left{
     display: flex;

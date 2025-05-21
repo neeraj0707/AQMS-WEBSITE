@@ -1327,7 +1327,7 @@ tr:hover {
   /* max-width: 800px; */
   margin: 0 auto 40px;
   padding: 20px;
-  background-color: #319af0;
+  background-color: #76b9ef;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
@@ -1466,7 +1466,8 @@ tr:hover {
 
 /* Hero section */
 .containers_section{
-  background-image: url('assets/dotted_bg_1.jpg');
+  /* background-image: url('assets/dotted_bg_1.jpg'); */
+  background-image: url('assets/Blue\ Minimalist\ Desktop\ Wallpaper\ \(2\).png');
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -1506,20 +1507,16 @@ tr:hover {
   font-family: "Figtree", sans-serif;
 }
 .image-section img {
-    width: 100%;
+    width: 56%;
     height: auto;
 }
 .image-section {
   flex: 1; /* Take up available space */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
-.image-section img {
-  /* max-width: 100%; */
-  /* height: 100%; */
-  width: 100%; 
-}
+
 
 .text-section h1 .text-primary {
   color: #007bff; /* Primary color */
