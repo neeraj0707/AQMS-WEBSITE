@@ -1118,6 +1118,9 @@ tr:hover {
   align-items: center;
   margin-top: -30px;
 }
+.demo-container-content-left{
+  width: 65%;
+}
       
 .demo-container-content-left img{
   width: 100%;
