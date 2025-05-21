@@ -827,7 +827,7 @@
     background: linear-gradient(135deg, #ecfdf5 0%, #f0f9ff 100%);
 }
 
-.product_1_left img, .product_2_left img, .product_3_left img , .product_5_left img {
+.product_1_left img, .product_2_left img, .product_3_left img, .product_5_left img {
     max-width: 100%;
     height: auto;
     max-height: 220px;
