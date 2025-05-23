@@ -665,3 +665,33 @@ gsap.to(".carousel-section", {
       },
     },
   });
+
+
+
+
+
+
+
+
+
+  const data = [
+  { index: 1, parameter: "CO₂ (Carbon Dioxide)", accuracy: "±(50 ppm + 3% of reading)", range: "400 – 5000 ppm" },
+  { index: 2, parameter: "PM2.5", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
+  { index: 3, parameter: "PM10", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
+  { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±10%", range: "0 – 10 mg/m³" },
+  { index: 5, parameter: "Temperature", accuracy: "±0.5°C", range: "-10°C to 60°C" },
+  { index: 6, parameter: "Relative Humidity", accuracy: "±3% RH", range: "0% – 100% RH" },
+];
+
+const tableBody = document.querySelector("#specTable tbody");
+
+data.forEach(row => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td>${row.index}</td>
+    <td>${row.parameter}</td>
+    <td>${row.accuracy}</td>
+    <td>${row.range}</td>
+  `;
+  tableBody.appendChild(tr);
+});

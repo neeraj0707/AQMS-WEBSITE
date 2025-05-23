@@ -17,17 +17,21 @@
 
 <!-- Include the ThreeSixty.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 
 </head>
 <body> 
     <nav class="navbar">
         <!-- <a href="index.html" class="logo">Tecsage Innovation</a> -->
-        <a href="index.html"><img src="assets/tecsage-logo.png" alt="Tecsage Innovations" width="170">
+        <a href="index.html"><img src="assets/tecsage-blue-logo.png" alt="Tecsage Innovations" width="170">
         <ul class="nav-links">
           <li><a href="airmonitor.html">Air Monitor</a></li>
           <!-- <li><a href="airpurifier.html">Air Purifier</a></li> -->
-           <li><a href="contact-us.html">Our Services</a></li>
+           <li><a href="contact-us.html">Services</a></li>
           <li><a href="face-mask.html">Learn</a></li>
           <li><a href="news.html">News</a></li>
           <!-- <li><a href="contact-us.html">About Us</a></li> -->
@@ -257,7 +261,31 @@
                 </div>
     
               </section>
+
+               <div class="technical-container">
+    <h2>Technical Specifications</h2>
+    <table id="specTable">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Parameter</th>
+          <th>Accuracy</th>
+          <th>Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be inserted using JavaScript -->
+      </tbody>
+    </table>
+          </div>
+
+          <div class="connectivity-container">
+            <h2 class="animate__animated animate__fadeInUp">Modes of Connectivity</h2>
+            <img src="assets/diagram-connectivity3.png" class="animate__animated animate__fadeInUp" alt="">
+          </div>
         </section>
+
+         
 
 
         
@@ -411,6 +439,30 @@
 
   // Start rotating
   // threesixty.play();
+
+
+
+    const data = [
+  { index: 1, parameter: "CO₂ (Carbon Dioxide)", accuracy: "±75 ppm", range: "400 – 5000 ppm" },
+  { index: 2, parameter: "PM2.5", accuracy: "±10 µg/m³ or 10%", range: "0 – 999 µg/m³" },
+  { index: 3, parameter: "PM10", accuracy: "±10 µg/m³ or 10%", range: "0 – 999 µg/m³" },
+  { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±0.1 mg/m³", range: "0.1 – 10 mg/m³" },
+  { index: 5, parameter: "Temperature", accuracy: "±0.4°C", range: "-40°C to 125°C" },
+  { index: 6, parameter: "Relative Humidity", accuracy: "±5% RH", range: "0% – 100% RH" },
+];
+
+const tableBody = document.querySelector("#specTable tbody");
+
+data.forEach(row => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td>${row.index}</td>
+    <td>${row.parameter}</td>
+    <td>${row.accuracy}</td>
+    <td>${row.range}</td>
+  `;
+  tableBody.appendChild(tr);
+});
     
     </script>
 
