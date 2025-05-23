@@ -59,7 +59,7 @@
         <img class="carousel-image" src="./assets/shivam (3).jpeg" alt="Image 2" />
         
         <img
-          class="carousel-image"
+          class="carousel-image" 
           src="./assets/sanjeev_hard.jpg"
           alt="Image 3"
         />
@@ -78,24 +78,6 @@
       <button class="intro_button" ><a href="./contact-us.html">Know more</a></button>
       <a href=""></a>
     </div>
-
-    <!-- <section class="tecsage_about">
-      <h3>Who we are</h3>
-
-      <p>
-        Founded in 2017, Tecsage Technovations Pvt. Ltd. is a pioneering company
-        dedicated to advancing automotive technology. Under the leadership of
-        our esteemed director, Dr. D S Khatri, who holds a PhD in Engine
-        Management Systems from IIT Delhi, we have established ourselves as a
-        leader in the field. Our commitment to research and development is
-        reflected in the 43 research papers we have published in both national
-        and international conferences and journals. Our work has been recognized
-        globally, with several of our papers receiving prestigious best paper
-        awards. At Tecsage Technovation, we combine expertise and innovation to
-        drive the future of automotive technology, making significant
-        contributions to the industry both in production and research.
-      </p>
-    </section> -->
 
     <div class="tecsage_features">
       <h3>OUR CORE VALUES .</h3>
@@ -184,7 +166,7 @@
             src="./assets/PS-3.jpg"
             alt="Inner Air Quality Monitoring"
           />
-          <h3>Inner Air Quality Monitoring</h3>
+          <h3>Indoor Air Quality Monitoring</h3>
           <p>
             Advanced sensors and IoT solutions to measure indoor air pollutants
             and enhance air quality.
@@ -234,172 +216,6 @@
         </div>
       </div>
     </section>
-
- 
-<!-- 
-    <section class="contact-us-banner">
-      <img src="./assets/CONTACT-NEW-PHOTO.jpeg" alt="Contact Us Banner" />
-      <div class="overlay"></div>
-      <div class="contact-us-text">
-        <h3>Contact Us</h3>
-        <p>
-          Our team is here to offer you comprehensive information and crafting
-          tailored solutions to meet your instructional needs.
-        </p>
-        <a href="#contact-form-container"
-          ><button class="contact-us-btn">Contact Us</button></a
-        >
-      </div>
-    </section>
-
-
-    <div id="contact_container" class="contact_container">
-
-      
-<dotlottie-player
-  src="https://lottie.host/e6ea21df-3e5a-48e2-bd99-98c2e97a65d9/YKSbzbl6Qv.lottie"
-  background="transparent"
-  speed="1"
-  style=" height: 500px"
-  loop
-  autoplay
-></dotlottie-player>
-
-      <div class="contact_info">
-        <h2>Get in Touch</h2>
-        <p>We are here to assist you with any inquiries or support you may need. Please don't hesitate to reach out to us.</p>
-        <div class="contact_details">
-          <div class="contact_detail">
-            <img src="./assets/phone.png" alt="Phone Icon" />
-            <p>+91 99715 88638</p>
-          </div>
-          <div class="contact_detail">
-            <img src="./assets/email.png" alt="Email Icon" />
-            <p>director@tecsageinnovations.com</p>
-          </div>
-          
-        </div> 
-      </div>   
-      
-      <div id="contact-form-container">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
-            <span class="error-message" id="nameError"></span>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <span class="error-message" id="emailError"></span>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Your Phone Number"
-              required
-            />
-            <span class="error-message" id="phoneError"></span>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              rows="5"
-              required
-            ></textarea>
-            <span class="error-message" id="messageError"></span>
-          </div>
-          <button type="submit" class="submit-button">Send Message</button>
-        </form>
-      </div>
-    </div>
-
-    <script>
-      document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-    
-        // Clear previous errors
-        document.querySelectorAll(".error-message").forEach(el => el.style.display = "none");
-    
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const phone = document.getElementById("phone").value.trim();
-        const message = document.getElementById("message").value.trim();
-        let isValid = true;
-    
-        // Basic Validation
-        if (name === "") {
-          document.getElementById("nameError").textContent = "Name is required";
-          document.getElementById("nameError").style.display = "block";
-          isValid = false;
-        }
-    
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (email === "" || !emailPattern.test(email)) {
-          document.getElementById("emailError").textContent = "Valid email is required";
-          document.getElementById("emailError").style.display = "block";
-          isValid = false;
-        }
-    
-        const phonePattern = /^[0-9]{10}$/;
-        if (phone === "" || !phonePattern.test(phone)) {
-          document.getElementById("phoneError").textContent = "Valid phone number is required";
-          document.getElementById("phoneError").style.display = "block";
-          isValid = false;
-        }
-    
-        if (message === "") {
-          document.getElementById("messageError").textContent = "Message is required";
-          document.getElementById("messageError").style.display = "block";
-          isValid = false;
-        }
-    
-        if (isValid) {
-          // Send email using EmailJS
-          emailjs.send("service_wtbvrs2", "template_fyp64po", {
-            name: name,
-            email: email,
-            phone: phone,
-            message: message,
-          }).then(function(response) {
-            alert("Message sent successfully to the manager!");
-            document.getElementById("contactForm").reset();
-          }, function(error) {
-            alert("Failed to send message. Try again later.");
-            console.error(error);
-          });
-        }
-      });
-    </script>
-     -->
-
-
-
-
-
-
-
-
-
 
 
 

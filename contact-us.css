@@ -5,6 +5,7 @@
     font-family: 'Figtree', sans-serif;
 }
 
+
 .tecsage_image_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -160,7 +161,7 @@
     /* width: 50%; */
     flex-direction: column;
     gap: 50px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
