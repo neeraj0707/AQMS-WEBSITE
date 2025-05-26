@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: "Figtree", sans-serif;
 }
+
 .air-monitor-banner {
     width: 90%;
     height: 75vh; 
@@ -416,9 +417,9 @@
 }
 
 .upper-section p {
-    font-size: 3rem; 
-    font-weight: 400;
-    color: rgb(60, 60, 60);
+    font-size: 4rem; 
+    font-weight: bold;
+    color: rgb(8 109 30);
 }
 
 /* .lower-section {
@@ -565,9 +566,9 @@
 }
 
 .pm25 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .pm25-content {
@@ -990,6 +991,87 @@
 
 
 
+.indoor_container{
+  display: flex;
+  justify-content: start;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.indoor_container_content {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+   margin-right: 30px;
+    padding:  0px 0.5rem;
+    max-width: 100%;
+  /* margin-left: 30px; */
+  /* max-width: 600px; */
+}
+
+
+
+.indoor-air-quality { 
+  background-color: #123d57; 
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  margin-top: 70px;
+}
+
+.indoor-air-quality h2 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.iaq-stats, .iaq-reasons, .iaq-facts {
+  /* max-width: 800px; */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: #76b9ef;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.iaq-stats h3, .iaq-reasons h3, .iaq-facts h3 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #0c0c0c;
+  font-weight: 600;
+}
+.iaq-stats p{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.iaq-reasons ul, .iaq-facts ul {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.iaq-reasons li, .iaq-facts li {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.gs-reveal {
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+ .indoor_container_content {
+   
+  }
+
+
+
 .iaqms-container{
     display: flex;
     flex-direction: column;
@@ -1019,8 +1101,8 @@
     margin-bottom: 30px;
 }
 .iaqms-content p{
-    font-size: 1.2rem;
-    line-height: 30px;
+    font-size: 1.7rem;
+    line-height: 38 px;
     font-weight: 300;
     letter-spacing: 1px;
     color: black;
@@ -1047,9 +1129,10 @@
   gap: 20px;
 }
 .wrapper-container h2{
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: #0f172a;
+  padding-bottom: 20px;
 }
 .card-subtitle-container{
   display: flex;
@@ -1147,8 +1230,8 @@
 .technical-container h2 {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 2.3rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 table {
@@ -1189,8 +1272,15 @@ tr:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 .connectivity-container h2 {
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 4rem;
+  font-weight: bold;
   color: #080808;
   margin-bottom: 20px;
+}
+.product_description h2{
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #eaeceb;
+    text-align: center;
+    margin-bottom: 30px;
 }

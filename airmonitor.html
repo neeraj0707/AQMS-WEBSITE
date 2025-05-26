@@ -27,13 +27,14 @@
 <body> 
     <nav class="navbar">
         <!-- <a href="index.html" class="logo">Tecsage Innovation</a> -->
-        <a href="index.html"><img src="assets/tecsage-blue-logo.png" alt="Tecsage Innovations" width="170">
+        <img src="assets/tecsage-blue-logo.png" alt="Tecsage Innovations" width="170">
         <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
           <li><a href="airmonitor.html">Air Monitor</a></li>
           <!-- <li><a href="airpurifier.html">Air Purifier</a></li> -->
-           <li><a href="contact-us.html">Services</a></li>
+           <li><a href="About-us.html">About Us</a></li>
           <li><a href="face-mask.html">Learn</a></li>
-          <li><a href="news.html">News</a></li>
+          <!-- <li><a href="news.html">News</a></li> -->
           <!-- <li><a href="contact-us.html">About Us</a></li> -->
            <li><a href="touch.html" id="contact-btn">Contact Us</a></li>
         </ul>
@@ -43,6 +44,49 @@
           <span></span>
         </div>
     </nav> 
+
+     <section class="indoor-air-quality">
+    <h2 class="title">Why Indoor Air Quality Matters?</h2>
+
+    <div class="indoor_container">
+
+    <dotlottie-player
+    class="indoor_animation"
+    src="https://lottie.host/afd9f14f-aa76-4afa-bf3b-c14a25777e04/0Es6ZA6Cpb.lottie"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay></dotlottie-player> 
+
+    <div class="indoor_container_content">
+  
+    <div class="iaq-stats gs-reveal">
+      <h3>Indoor Air Quality</h3>
+      <p class="indoor-text"><strong>90%</strong> of our lives spent indoors</p>
+      <p class="indoor-text"><strong>2–5x</strong> more pollution indoors than outdoors</p>
+    </div>
+  
+    <div class="iaq-reasons gs-reveal">
+      <h3>Reasons:</h3>
+      <ul class="indoor-text">
+        <li >Most indoor spaces especially at <strong>Home, Offices and Educational institutes</strong> lack <strong>real-time feedback</strong> about air quality.</li>
+        <li>Humans cannot see harmful gases like <strong>CO₂, TVOCs</strong>, or fine dust (<strong>PM2.5, PM10</strong>), so they cannot act until they know the air quality.</li>
+      </ul>
+    </div>
+  
+    <div class="iaq-facts gs-reveal">
+      <h3>3 Things You Must Know</h3>
+      <ul class="indoor-text">
+        <li ><strong>2 in 5</strong> people suffer from allergies caused by these substances.</li>
+        <li >We consume nearly <strong>8 times</strong> more air than food.</li>
+        <li >Modern buildings often do <strong>not allow enough fresh air</strong> to circulate.</li>
+      </ul>
+    </div>
+
+    </div>
+
+    </div>
+    </section>
 
     <div class="wave-background">
         <img src="./assets/WAVE_BG_PATTERN.png" alt="Your Content">
@@ -225,9 +269,9 @@
     
                     <div class="pm25-left">
                         <div class="pm25-left-content">
-                            <img src="./assets/pm2.5.png" alt="">
+                            <img src="./assets/pm2.5.png" alt=""> <img src="assets/CO2-icon.png" alt="">
                             <h3>Real-Time Monitoring</h3>
-                            <p>Indoor Air Quality Monitor helps you to track various Air Quality factors such as PMI0, PM25, TVOC and so on. </p>
+                            <p>Indoor Air Quality Monitor helps you to track various Air Quality factors such as PMI0, PM25, TVOC, CO2 and so on. </p>
                         </div>
                         <div class="pm25-left-content">
                             <img src="./assets/icons8-battery-50.png" alt="">
@@ -285,14 +329,12 @@
           </div>
         </section>
 
-         
-
-
-        
-      
+    
 
     <section class="product-list">
         <section class="product_description">
+
+          <h2>Stop worrying, we're here to help you and solve it</h2>
 
             <section class ="product_1">
                 <div class="product_1_left">
@@ -365,7 +407,7 @@
                     <img src ="assets/iaqms5.png" alt ="image found">
                 </div>
                 <div class="product_5_right">
-                    <h1 class="ph">Prana 720</h1>
+                    <h1 class="ph">Prana 725</h1>
                     <h3>Indoor Air Quality Monitoring System</h3>
                     <p  class="pea">This IAQMS enables real-time wireless data transmission to cloud platforms or mobile apps. 
                         It is equipped with advanced sensors that measure CO2, PM2.5, PM10, Temp., Relative Humidity, Wi-Fi, USB C type.</p>
@@ -447,7 +489,7 @@
   { index: 2, parameter: "PM2.5", accuracy: "±10 µg/m³ or 10%", range: "0 – 999 µg/m³" },
   { index: 3, parameter: "PM10", accuracy: "±10 µg/m³ or 10%", range: "0 – 999 µg/m³" },
   { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±0.1 mg/m³", range: "0.1 – 10 mg/m³" },
-  { index: 5, parameter: "Temperature", accuracy: "±0.4°C", range: "-40°C to 125°C" },
+  { index: 5, parameter: "Temperature", accuracy: "±1°C", range: "-20°C to 85°C" },
   { index: 6, parameter: "Relative Humidity", accuracy: "±5% RH", range: "0% – 100% RH" },
 ];
 

@@ -731,8 +731,8 @@ tr:hover {
   padding-bottom: 50px;
   font-weight: 800;
   text-align: center;
-  font-size: 2.9rem;
-  color: #333;
+  font-size: 4rem;
+  color: #00375f;
 }
 
 /* Carousel Container */
@@ -1293,75 +1293,6 @@ tr:hover {
 
 
 
-.indoor_container{
-  display: flex;
-  justify-content: start;
-  /* flex-direction: column; */
-  align-items: center;
-}
-
-.indoor_container_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* margin-left: 30px; */
-  /* max-width: 600px; */
-}
-
-
-
-.indoor-air-quality {
-  background-color: #123d57; 
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-  font-family: "Figtree", sans-serif;
-}
-
-.indoor-air-quality h2 {
-  font-size: 5rem;
-  margin-bottom: 30px;
-}
-
-.iaq-stats, .iaq-reasons, .iaq-facts {
-  /* max-width: 800px; */
-  margin: 0 auto 40px;
-  padding: 20px;
-  background-color: #76b9ef;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.iaq-stats h3, .iaq-reasons h3, .iaq-facts h3 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: #0c0c0c;
-  font-weight: 600;
-}
-.iaq-stats p{
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #fff;
-  font-weight: 100;
-}
-
-.iaq-reasons ul, .iaq-facts ul {
-  text-align: left;
-  padding-left: 20px;
-  line-height: 1.6;
-}
-
-.iaq-reasons li, .iaq-facts li {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-
-.gs-reveal {
-  opacity: 1;
-  transform: translateY(50px);
-}
-
 
 .cart-icon {
   cursor: pointer;
@@ -1500,10 +1431,10 @@ tr:hover {
 }
 .text-section p {
   margin-top: 50px;
-  font-size: 1.4rem;
-  color: #141414;
+  font-size: 1.5rem;
+  color: #00375f;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Figtree", sans-serif;
 }
 .image-section img {
@@ -1619,7 +1550,7 @@ tr:hover {
   width: 100%;
 }
 .services-header .subtitle {
-  color: #234982;
+  color: #00375f;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1867,6 +1798,7 @@ tr:hover {
   .feature-cards-section h2 {
     font-size: 1.5rem;
     padding-bottom: 2rem;
+   
   }
   
   .feature-card1,
@@ -1946,11 +1878,7 @@ tr:hover {
     flex-direction: column;
   }
   
-  .indoor_container_content {
-    margin-left: 0;
-    padding:  0px 0.5rem;
-    max-width: 100%;
-  }
+ 
   
   .indoor-air-quality h2 {
     font-size: 1.5rem;
@@ -2082,4 +2010,23 @@ tr:hover {
     /* font-size: 0.8rem; */
   }
   
+}
+
+.tecsage-points ul li {
+  /* display: inline-block; */
+  margin-right: 20px;
+  font-size : 2rem;
+  color: #234982;
+    list-style-type: none; 
+}
+.tecsage-points ul {
+  text-align: left;
+  /* width: 80%; */
+  margin: auto;
+
+}
+.tecsage-points {
+  /* padding-bottom: 2rem; */
+  margin-bottom: 2.5rem;
+  display: flex;
 }
