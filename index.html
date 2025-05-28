@@ -59,8 +59,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&display=swap" rel="stylesheet">
   </head>
-
+ 
 <body>
+
+   <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
   <nav class="navbar">
     <!-- <a href="index.html" class="logo">Tecsage Innovation</a> -->
    
@@ -111,7 +115,7 @@
 
 
    <!-- <div id="map"></div> -->
-
+  
 
   <main>
 
@@ -122,14 +126,16 @@
             <span class="text-primary">Nature </span>Inspired Innovation
           </h1>
           <p>AN INNOVATIVE GREEN TECHNOLOGY STARTUP
-with mission to reduce pollution</p>
+             with mission to reduce pollution and contribute to a cleaner, healthier environment for future generations.</p>
           <button class="btn-primary" id="scrollButton">
-            <a href="./contact-us.html">Learn More</a>
+            <a href="./About-us.html">Learn More</a>
           </button>
         </div>
         
         <div class="image-section" id="nature_inspired_inovation">
-          <img src="assets/Untitled design (10).png" alt="Tecsage Technovations">
+          <img src="assets/s10.png" alt="">
+          <!-- <img src="assets/Untitled design (10).png" alt="Tecsage Technovations"> -->
+          <!-- <img id="a2" src="assets/a2.png" alt=""> -->
             <!-- <div class="slider-container">
                <div class="slider-track">
                 <div class="slide-p">
@@ -154,9 +160,11 @@ with mission to reduce pollution</p>
             </div> -->
         </div>
       </div>
+
+      <div>
+        <h2></h2>
+      </div>
     </div>
-      
-   
     
   </main>
 
@@ -296,8 +304,6 @@ with mission to reduce pollution</p>
 
 <!-------------------------------------------------------------------------------------------->
 
-
-
 <!-------------------------------------------------------------------------------------------->
 
 <div class="mobile_container"> 
@@ -360,7 +366,7 @@ with mission to reduce pollution</p>
     <div class="demo-container-content-right">
       <p>Start using a reliable air quality data platform</p>
       <!-- <button type="text"><a href="#contact-us.html">Get A demo</a></button> -->
-      <a href="contact-us.html" class="demo-contact-button">Get a demo</a>
+      <a href="touch.html" class="demo-contact-button">Get a demo</a>
 
     </div>
   </div>
@@ -464,6 +470,30 @@ with mission to reduce pollution</p>
  <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> -->
 
 <script src="script.js"></script>
+
+<script>
+  const cursorDot = document.querySelector("[data-cursor-dot]");
+const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+window.addEventListener("mousemove", function (e) {
+  const posX = e.clientX;
+  const posY = e.clientY;
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
+
+  // cursorOutline.style.left = `${posX}px`;
+  // cursorOutline.style.top = `${posY}px`;
+
+  cursorOutline.animate({
+    left: `${posX}px`,
+    top: `${posY}px`
+  }, {
+    duration: 500,
+    fill: "forwards"
+  });
+
+});
+</script>
 
 </body>
 
