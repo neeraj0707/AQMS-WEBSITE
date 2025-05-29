@@ -1,6 +1,20 @@
 
-
-
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Figtree", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    /* background-color: #0a0a0a; */
+    /* cursor: none; */
+    
+}
 
 
 
@@ -101,6 +115,7 @@
     /* margin: 100px auto 60px; */
     margin: 104px auto 0px;
     gap: 50px;
+    /* background-color: rgb(9, 53, 117); */
 }
 
 /* Lottie animation as overlay */

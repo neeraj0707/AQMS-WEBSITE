@@ -52,6 +52,8 @@
         <span></span>
       </div>
     </nav>
+    
+    <div id="cursor" ></div>
 
     <section class="carousel-section">
       <div class="carousel">
@@ -273,7 +275,24 @@
 
      <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
     <script src="script.js"></script>
+
+    <script>
+  var cursor = document.querySelector("#cursor");
+
+document.addEventListener("mousemove", function (dets) {
+  gsap.to(cursor, {
+    x: dets.x ,
+    y: dets.y,
+    duration: 0.5,
+    // ease: "power1.out",
+    ease: "back.out"
+    
+  });
+})
+</script>
   
   </body>
 </html>

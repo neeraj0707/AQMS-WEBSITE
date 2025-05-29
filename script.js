@@ -419,36 +419,36 @@ showNextImage(); // Initial image
 setInterval(showNextImage, 5000); // Change every 3 seconds
 
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".tecsage_text", {
-  scrollTrigger: {
-    trigger: ".tecsage_text",
-    start: "top 80%", 
-    toggleActions: "play none none none",
-  },
-  opacity: 1,
-  y: 0,
-  duration: 1.2,
-  ease: "power2.out",
-});
+// gsap.to(".tecsage_text", {
+//   scrollTrigger: {
+//     trigger: ".tecsage_text",
+//     start: "top 80%", 
+//     toggleActions: "play none none none",
+//   },
+//   opacity: 1,
+//   y: 0,
+//   duration: 1.2,
+//   ease: "power2.out",
+// });
 
 
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-// Animate carousel section out on scroll
-gsap.to(".carousel-section", {
-  scrollTrigger: {
-    trigger: ".carousel-section",
-    start: "top top",
-    end: "bottom top",
-    scrub: true,
-  },
-  opacity: 1,
-  y: -50,
-  ease: "power2.out"
-});
+// // Animate carousel section out on scroll
+// gsap.to(".carousel-section", {
+//   scrollTrigger: {
+//     trigger: ".carousel-section",
+//     start: "top top",
+//     end: "bottom top",
+//     scrub: true,
+//   },
+//   opacity: 1,
+//   y: -50,
+//   ease: "power2.out"
+// });
 
 
 
@@ -579,54 +579,54 @@ gsap.to(".carousel-section", {
 
 
 
-  async function fetchAQIData() {
-    try {
-      const response = await fetch("http://localhost:3000/api/aqi");
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      return data.results || []; // Return empty array if results are not found
-    } catch (error) {
-      console.error("Failed to fetch from proxy:", error);
-      return [];
-    }
-  }
+  // async function fetchAQIData() {
+  //   try {
+  //     const response = await fetch("http://localhost:3000/api/aqi");
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! status: ${response.status}`);
+  //     }
+  //     const data = await response.json();
+  //     return data.results || []; // Return empty array if results are not found
+  //   } catch (error) {
+  //     console.error("Failed to fetch from proxy:", error);
+  //     return [];
+  //   }
+  // }
   
 
   
-  // Initialize map
-  const map = L.map('map').setView([20.5937, 78.9629], 5);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+  // // Initialize map
+  // const map = L.map('map').setView([20.5937, 78.9629], 5);
+  // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   
-  // Process and display data
-  fetchAQIData().then(locations => {
-    if (locations.length === 0) {
-      console.warn("No locations data received");
-      return;
-    }
+  // // Process and display data
+  // fetchAQIData().then(locations => {
+  //   if (locations.length === 0) {
+  //     console.warn("No locations data received");
+  //     return;
+  //   }
 
-    locations.forEach(location => {
-      const lat = location.coordinates?.latitude;
-      const lng = location.coordinates?.longitude;
-      const pm25 = location.measurements?.find(m => m.parameter === 'pm25')?.value;
+  //   locations.forEach(location => {
+  //     const lat = location.coordinates?.latitude;
+  //     const lng = location.coordinates?.longitude;
+  //     const pm25 = location.measurements?.find(m => m.parameter === 'pm25')?.value;
       
-      if (lat && lng && pm25 !== undefined) {
-        const color = pm25 <= 50 ? 'green' : 
-                     pm25 <= 100 ? 'yellow' : 
-                     'red';
+  //     if (lat && lng && pm25 !== undefined) {
+  //       const color = pm25 <= 50 ? 'green' : 
+  //                    pm25 <= 100 ? 'yellow' : 
+  //                    'red';
         
-        L.circleMarker([lat, lng], { 
-          radius: 8,
-          fillColor: color,
-          color: '#000',
-          fillOpacity: 0.8
-        })
-        .addTo(map)
-        .bindPopup(`PM2.5: ${pm25} µg/m³`);
-      }
-    });
-  });
+  //       L.circleMarker([lat, lng], { 
+  //         radius: 8,
+  //         fillColor: color,
+  //         color: '#000',
+  //         fillOpacity: 0.8
+  //       })
+  //       .addTo(map)
+  //       .bindPopup(`PM2.5: ${pm25} µg/m³`);
+  //     }
+  //   });
+  // });
 
 
 
@@ -641,30 +641,30 @@ gsap.to(".carousel-section", {
 
 
 
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
+  // const swiper = new Swiper('.swiper', {
+  //   loop: true,
+  //   slidesPerView: 1,
+  //   spaceBetween: 30,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  //   breakpoints: {
+  //     640: {
+  //       slidesPerView: 1,
+  //     },
+  //     768: {
+  //       slidesPerView: 2,
+  //     },
+  //     1024: {
+  //       slidesPerView: 3,
+  //     },
+  //   },
+  // });
 
 
 
@@ -697,15 +697,17 @@ data.forEach(row => {
 });
 
 
-const cursorDot = document.querySelector("[data-cursor-dot]");
-const cursorOutline = document.querySelector("[data-cursor-outline]");
 
-window.addEventListener("mousemove", function (e) {
-  const posX = e.clientX;
-  const posY = e.clientY;
-  cursorDot.style.left = `${posX}px`;
-  cursorDot.style.top = `${posY}px`;
-  cursorOutline.style.left = `${posX}px`;
-  cursorOutline.style.top = `${posY}px`;
 
-});
+
+
+
+
+
+
+
+
+
+
+
+
