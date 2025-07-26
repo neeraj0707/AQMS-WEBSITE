@@ -678,9 +678,9 @@ setInterval(showNextImage, 5000); // Change every 3 seconds
   { index: 1, parameter: "CO₂ (Carbon Dioxide)", accuracy: "±(50 ppm + 3% of reading)", range: "400 – 5000 ppm" },
   { index: 2, parameter: "PM2.5", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
   { index: 3, parameter: "PM10", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
-  { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±10%", range: "0 – 10 mg/m³" },
-  { index: 5, parameter: "Temperature", accuracy: "±0.5°C", range: "-10°C to 60°C" },
-  { index: 6, parameter: "Relative Humidity", accuracy: "±3% RH", range: "0% – 100% RH" },
+  { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±0.2%", range: "0.2 – 10 mg/m³" },
+  { index: 5, parameter: "Temperature", accuracy: "±0.5°C", range: "-10°C to 85°C" },
+  { index: 6, parameter: "Relative Humidity", accuracy: "±3% RH", range: "5% – 100% RH" },
 ];
 
 const tableBody = document.querySelector("#specTable tbody");

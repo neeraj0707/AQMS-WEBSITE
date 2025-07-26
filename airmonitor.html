@@ -1,146 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tecsage Innovations</title>
     <!-- <title>Document</title> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Add this in the <head> section of your HTML file -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="airmonitor.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="airmonitor.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script
-  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-<!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->
 
-<!-- Include the ThreeSixty.js CDN -->
-<script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
- <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-
-</head>
-<body> 
+    <!-- Include the ThreeSixty.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <!-- <a href="index.html" class="logo">Tecsage Innovation</a> -->
-        <img src="assets/tecsage-blue-logo.png" alt="Tecsage Innovations" width="170">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="airmonitor.html">Air Monitor</a></li>
-          <!-- <li><a href="airpurifier.html">Air Purifier</a></li> -->
-           <li><a href="About-us.html">About Us</a></li>
-          <li><a href="face-mask.html">Learn</a></li>
-          <!-- <li><a href="news.html">News</a></li> -->
-          <!-- <li><a href="contact-us.html">About Us</a></li> -->
-           <li><a href="touch.html" id="contact-btn">Contact Us</a></li>
-        </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+      <!-- <a href="index.html" class="logo">Tecsage Innovation</a> -->
+      <img
+        src="assets/tecsage-blue-logo.png"
+        alt="Tecsage Innovations"
+        width="170"
+      />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="airmonitor.html">Air Monitor</a></li>
+        <!-- <li><a href="airpurifier.html">Air Purifier</a></li> -->
+        <li><a href="About-us.html">About Us</a></li>
+        <li><a href="face-mask.html">Learn</a></li>
+        <!-- <li><a href="news.html">News</a></li> -->
+        <!-- <li><a href="contact-us.html">About Us</a></li> -->
+        <li><a href="touch.html" id="contact-btn">Contact Us</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div id="cursor"></div>
+
+    <section class="indoor-air-quality">
+      <h2 class="title">Why Indoor Air Quality Matters?</h2>
+
+      <div class="indoor_container">
+        <dotlottie-player
+          class="indoor_animation"
+          src="https://lottie.host/afd9f14f-aa76-4afa-bf3b-c14a25777e04/0Es6ZA6Cpb.lottie"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></dotlottie-player>
+
+        <div class="indoor_container_content">
+          <div class="iaq-stats gs-reveal">
+            <h3>Indoor Air Quality</h3>
+            <p class="indoor-text">
+              <strong>90%</strong> of our lives spent indoors
+            </p>
+            <p class="indoor-text">
+              <strong>2–5x</strong> more pollution indoors than outdoors
+            </p>
+          </div>
+
+          <div class="iaq-reasons gs-reveal">
+            <h3>Reasons:</h3>
+            <ul class="indoor-text">
+              <li>
+                Most indoor spaces especially at
+                <strong>Home, Offices and Educational institutes</strong> lack
+                <strong>real-time feedback</strong> about air quality.
+              </li>
+              <li>
+                Humans cannot see harmful gases like
+                <strong>CO₂, TVOCs</strong>, or fine dust (<strong
+                  >PM2.5, PM10</strong
+                >), so they cannot act until they know the air quality.
+              </li>
+            </ul>
+          </div>
+
+          <div class="iaq-facts gs-reveal">
+            <h3>3 Things You Must Know</h3>
+            <ul class="indoor-text">
+              <li>
+                <strong>2 in 5</strong> people suffer from allergies caused by
+                these substances.
+              </li>
+              <li>
+                We consume nearly <strong>8 times</strong> more air than food.
+              </li>
+              <li>
+                Modern buildings often do
+                <strong>not allow enough fresh air</strong> to circulate.
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav> 
-
-     <div id="cursor" ></div>
-
-     <section class="indoor-air-quality">
-    <h2 class="title">Why Indoor Air Quality Matters?</h2>
-
-    <div class="indoor_container">
-
-    <dotlottie-player
-    class="indoor_animation"
-    src="https://lottie.host/afd9f14f-aa76-4afa-bf3b-c14a25777e04/0Es6ZA6Cpb.lottie"
-    background="transparent"
-    speed="1"
-    loop
-    autoplay></dotlottie-player> 
-
-    <div class="indoor_container_content">
-  
-    <div class="iaq-stats gs-reveal">
-      <h3>Indoor Air Quality</h3>
-      <p class="indoor-text"><strong>90%</strong> of our lives spent indoors</p>
-      <p class="indoor-text"><strong>2–5x</strong> more pollution indoors than outdoors</p>
-    </div>
-  
-    <div class="iaq-reasons gs-reveal">
-      <h3>Reasons:</h3>
-      <ul class="indoor-text">
-        <li >Most indoor spaces especially at <strong>Home, Offices and Educational institutes</strong> lack <strong>real-time feedback</strong> about air quality.</li>
-        <li>Humans cannot see harmful gases like <strong>CO₂, TVOCs</strong>, or fine dust (<strong>PM2.5, PM10</strong>), so they cannot act until they know the air quality.</li>
-      </ul>
-    </div>
-  
-    <div class="iaq-facts gs-reveal">
-      <h3>3 Things You Must Know</h3>
-      <ul class="indoor-text">
-        <li ><strong>2 in 5</strong> people suffer from allergies caused by these substances.</li>
-        <li >We consume nearly <strong>8 times</strong> more air than food.</li>
-        <li >Modern buildings often do <strong>not allow enough fresh air</strong> to circulate.</li>
-      </ul>
-    </div>
-
-    </div>
-
-    </div>
+      </div>
     </section>
 
     <div class="wave-background">
-        <img src="./assets/WAVE_BG_PATTERN.png" alt="Your Content">
+      <img src="./assets/WAVE_BG_PATTERN.png" alt="Your Content" />
+    </div>
+
+    <section class="air-monitor-banner">
+      <div class="banner-text">
+        <div class="banner-text-writing">
+          <h2 class="banner-text-h2">
+            Assess Air Quality with Our Intelligent Air Quality Monitors
+          </h2>
+          <p id="banner-text-p">
+            Monitor, Evaluate, and Manage Your Air Quality with Precision Tools.
+          </p>
+        </div>
+        <div class="main-images">
+          <!-- <img src="assets/m1_.png" alt=""> -->
+          <!-- <div id="product-spin"></div> -->
+          <!-- <div id="threesixty"></div> -->
+          <div id="threesixty"></div>
+        </div>
       </div>
-      
-     <section class="air-monitor-banner">
-        <div class="banner-text">
-            <div class="banner-text-writing">
-                <h2 class="banner-text-h2">Assess Air Quality with Our Intelligent Air Quality Monitors</h2>
-                <p id="banner-text-p">Monitor, Evaluate, and Manage Your Air Quality with Precision Tools.</p>
-            </div>
-            <div class="main-images">
-                <!-- <img src="assets/m1_.png" alt=""> -->
-                 <!-- <div id="product-spin"></div> -->
-                   <!-- <div id="threesixty"></div> -->
-                    <div id="threesixty"></div>
-    
-            </div>
+
+      <div class="air-monitor-btn">
+        <!-- <button class="banner-text-btn"><p>Contact Us</p></button> -->
+        <a href="About-us.html"></a>
+        <dotlottie-player
+          src="https://lottie.host/32e99c9c-d833-4dfc-8f50-19ab2521dcab/DgSL4JJuDk.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 150px; cursor: pointer"
+          loop
+          autoplay
+          onclick="window.location.href='About-us.html';"
+        ></dotlottie-player>
+      </div>
+    </section>
+
+    <main class="air-monitor-content">
+      <div class="iaqms-container" data-aos="fade-up">
+        <div class="iaqms-content">
+          <h2>WHAT IS INDOOR AIR QUALITY MONITORING SYSTEM ?</h2>
+          <p>
+            Indoor Air Quality Monitoring System (IAQMS) is a
+            <strong>smart device</strong> that measures and monitors the quality
+            of air in indoor environments. It provides real-time data on various
+            air pollutants, including
+            <strong
+              >particulate matter (PM2.5, PM10), Total volatile organic
+              compounds (TVOCs), Carbon dioxide (CO2), Temperature, and Relative
+              humidity </strong
+            >. The IAQMS helps individuals and organizations assess and improve
+            indoor air quality, ensuring a healthier and safer environment.
+          </p>
         </div>
-
-        <div class="air-monitor-btn">
-            <!-- <button class="banner-text-btn"><p>Contact Us</p></button> -->
-             <a href="About-us.html"></a>
-            <dotlottie-player
-  src="https://lottie.host/32e99c9c-d833-4dfc-8f50-19ab2521dcab/DgSL4JJuDk.lottie"
-  background="transparent"
-  speed="1"
-  style="width: 200px; height: 150px; cursor: pointer;"
-  loop
-  autoplay
-  onclick="window.location.href='About-us.html';"
-></dotlottie-player>
-
-
+        <div class="indoor-air-monitor-right" data-aos="fade-left">
+          <img src="./assets/aqms3_pointing.png" alt="" />
         </div>
-    </section> 
+      </div>
 
-
-     <main class="air-monitor-content">
-
-        <div class="iaqms-container" data-aos="fade-up">
-          <div class="iaqms-content">
-             <h2>WHAT IS INDOOR AIR QUALITY MONITORING SYSTEM ?</h2>
-             <p>Indoor Air Quality Monitoring System (IAQMS) is a <strong>smart device</strong> that measures and monitors the quality of air in indoor environments. It provides real-time data on various air pollutants, including <strong>particulate matter (PM2.5, PM10), Total volatile organic compounds (TVOCs), Carbon dioxide (CO2), Temperature, and Relative humidity </strong>. The IAQMS helps individuals and organizations assess and improve indoor air quality, ensuring a healthier and safer environment.</p>
-          </div>
-          <div class="indoor-air-monitor-right" data-aos="fade-left">
-                <img src="./assets/aqms3_pointing.png" alt="">
-                  
-          </div>
-         </div>
-
-        <!-- <div class="indoor-air-monitor" data-aos="fade-up">
+      <!-- <div class="indoor-air-monitor" data-aos="fade-up">
             <div class="indoor-air-monitor-left" data-aos="fade-up">
                 <h3>Indoor Air Quality Monitor</h3>
                 <p>The AirQuality Monitor tracks indoor air quality in homes, schools, or workplaces, detecting pollutants from activities like cooking, cleaning, smoking, wood burning, interior decorating, and external sources such as wildfire smoke and traffic emissions. It provides real-time and historical data accessible through the free IQAir AirVisual mobile app.</p>
@@ -153,15 +190,16 @@
                   
             </div>
         </div> -->
-     </main> 
+    </main>
 
-        
-      
-        <section class="pollutants">
-            <div class="upper-section">
-                <p>The indoor air quality monitors make it easy to understand what's in your air</p>
-            </div>
-            <!-- <div class="lower-section">
+    <section class="pollutants">
+      <div class="upper-section">
+        <p>
+          The indoor air quality monitors make it easy to understand what's in
+          your air
+        </p>
+      </div>
+      <!-- <div class="lower-section">
                 <div class="lower-pollutant">
                     <img src="./assets/AQI.webp" alt="">
                     <span>AQI</span>
@@ -193,343 +231,388 @@
 
                 
             </div>   -->
-            
-            <div class="scroller-wrapper">
-  <div class="lower-section">
-    <!-- Duplicated content for infinite scroll effect -->
-    <div class="scroll-content">
-      <div class="lower-pollutant">
-        <img src="./assets/AQI.webp" alt="">
-        <span>AQI</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/PM1.avif" alt="">
-        <span>TVOC</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/PM2_5.webp" alt="">
-        <span>PM2.5</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/PM10.webp" alt="">
-        <span>PM10</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/CO2.webp" alt="">
-        <span>CO2</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/Temperature.webp" alt="">
-        <span>Temperature</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/Humidity.webp" alt="">
-        <span>Humidity</span>
-      </div>
-    </div>
 
-    <!-- Duplicate for seamless looping -->
-    <div class="scroll-content">
-      <div class="lower-pollutant">
-        <img src="./assets/AQI.webp" alt="">
-        <span>AQI</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/PM1.avif" alt="">
-        <span>TVOC</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/PM2_5.webp" alt="">
-        <span>PM2.5</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/PM10.webp" alt="">
-        <span>PM10</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/CO2.webp" alt="">
-        <span>CO2</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/Temperature.webp" alt="">
-        <span>Temperature</span>
-      </div>
-      <div class="lower-pollutant">
-        <img src="./assets/Humidity.webp" alt="">
-        <span>Humidity</span>
-      </div>
-    </div>
-  </div>
+      <div class="scroller-wrapper">
+        <div class="lower-section">
+          <!-- Duplicated content for infinite scroll effect -->
+          <div class="scroll-content">
+            <div class="lower-pollutant">
+              <img src="./assets/AQI.webp" alt="" />
+              <span>AQI</span>
             </div>
-
-        </section>
-        
-        <section class="pm25-container">
-              <section class="pm25">
-                <h2> Air Quality Monitor Key Features </h2>
-                <div class="pm25-content">
-    
-                    <div class="pm25-left">
-                        <div class="pm25-left-content">
-                            <img src="./assets/pm2.5.png" alt=""> <img src="assets/CO2-icon.png" alt="">
-                            <h3>Real-Time Monitoring</h3>
-                            <p>Indoor Air Quality Monitor helps you to track various Air Quality factors such as PMI0, PM25, TVOC, CO2 and so on. </p>
-                        </div>
-                        <div class="pm25-left-content">
-                            <img src="./assets/icons8-battery-50.png" alt="">
-                            <h3>3000 mAh Lithium Battery</h3>
-                            <p>Charge it once and use it a lot with 3000 mAh lithium battery last for upto 11 hours.</p>
-                        </div>
-                    </div>
-    
-                    <div class="animated-circle">
-                        <img src="./assets/m1_.png" class="center-image" alt="">
-                    </div>
-
-                    
-                    
-
-
-                    
-    
-                    <div class="pm25-right">
-                        <div class="pm25-right-content">
-                            <img src="./assets/icons8-wi-fi-48.png" alt="">
-                            <h3>Wifi Enabled</h3>
-                            <p>IAQMS is a compact,portable device which provides WiFi connectivity feature to analyze the data on mobile app.</p>
-                        </div>
-                        <div class="pm25-right-content">
-                            <img src="./assets/rectangle-icon.png" alt="">
-                            <h3>TFT Display Screen</h3>
-                            <p>The TFT display screen gives a clear Air Quality pollutants reading indicating if the Air is safe or not.</p>
-                        </div>
-                    </div>
-                </div>
-    
-              </section>
-
-               <div class="technical-container">
-    <h2>Technical Specifications</h2>
-    <table id="specTable">
-      <thead>
-        <tr>
-          <th>Index</th>
-          <th>Parameter</th>
-          <th>Accuracy</th>
-          <th>Range</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Rows will be inserted using JavaScript -->
-      </tbody>
-    </table>
+            <div class="lower-pollutant">
+              <img src="./assets/PM1.avif" alt="" />
+              <span>TVOC</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/PM2_5.webp" alt="" />
+              <span>PM2.5</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/PM10.webp" alt="" />
+              <span>PM10</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/CO2.webp" alt="" />
+              <span>CO2</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/Temperature.webp" alt="" />
+              <span>Temperature</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/Humidity.webp" alt="" />
+              <span>Humidity</span>
+            </div>
           </div>
 
-          <div class="connectivity-container">
-            <h2 class="animate__animated animate__fadeInUp">Modes of Connectivity</h2>
-            <img src="assets/diagram-connectivity3.png" class="animate__animated animate__fadeInUp" alt="">
+          <!-- Duplicate for seamless looping -->
+          <div class="scroll-content">
+            <div class="lower-pollutant">
+              <img src="./assets/AQI.webp" alt="" />
+              <span>AQI</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/PM1.avif" alt="" />
+              <span>TVOC</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/PM2_5.webp" alt="" />
+              <span>PM2.5</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/PM10.webp" alt="" />
+              <span>PM10</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/CO2.webp" alt="" />
+              <span>CO2</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/Temperature.webp" alt="" />
+              <span>Temperature</span>
+            </div>
+            <div class="lower-pollutant">
+              <img src="./assets/Humidity.webp" alt="" />
+              <span>Humidity</span>
+            </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-    
+    <section class="pm25-container">
+      <section class="pm25">
+        <h2>Air Quality Monitor Key Features</h2>
+        <div class="pm25-content">
+          <div class="pm25-left">
+            <div class="pm25-left-content">
+              <img src="./assets/pm2.5.png" alt="" />
+              <img src="assets/CO2-icon.png" alt="" />
+              <h3>Real-Time Monitoring</h3>
+              <p>
+                Indoor Air Quality Monitor helps you to track various Air
+                Quality factors such as PMI0, PM25, TVOC, CO2 and so on.
+              </p>
+            </div>
+            <div class="pm25-left-content">
+              <img src="./assets/icons8-battery-50.png" alt="" />
+              <h3>3000 mAh Lithium Battery</h3>
+              <p>
+                Charge it once and use it a lot with 3000 mAh lithium battery
+                last for upto 11 hours.
+              </p>
+            </div>
+          </div>
+
+          <div class="animated-circle">
+            <img src="./assets/m1_.png" class="center-image" alt="" />
+          </div>
+
+          <div class="pm25-right">
+            <div class="pm25-right-content">
+              <img src="./assets/icons8-wi-fi-48.png" alt="" />
+              <h3>Wifi Enabled</h3>
+              <p>
+                IAQMS is a compact,portable device which provides WiFi
+                connectivity feature to analyze the data on mobile app.
+              </p>
+            </div>
+            <div class="pm25-right-content">
+              <img src="./assets/rectangle-icon.png" alt="" />
+              <h3>TFT Display Screen</h3>
+              <p>
+                The TFT display screen gives a clear Air Quality pollutants
+                reading indicating if the Air is safe or not.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="technical-container">
+        <h2>Technical Specifications</h2>
+        <table id="specTable">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Parameter</th>
+              <th>Accuracy</th>
+              <th>Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be inserted using JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="connectivity-container">
+        <h2 class="animate__animated animate__fadeInUp">
+          Modes of Connectivity
+        </h2>
+        <img
+          src="assets/diagram-connectivity3.png"
+          class="animate__animated animate__fadeInUp"
+          alt=""
+        />
+      </div>
+    </section>
 
     <section class="product-list">
-        <section class="product_description">
+      <section class="product_description">
+        <h2>Stop worrying, we're here to help you and solve it</h2>
 
-          <h2>Stop worrying, we're here to help you and solve it</h2>
-
-            <section class ="product_1">
-                <div class="product_1_left">
-                    <img src ="assets/lol.png" alt ="image found">
-                </div>
-                <div class="product_1_right">
-                    <h1 class="ph">Prana 151</h1>
-                    <h3>Indoor Air Quality Monitoring System </h3>
-                    <p class="pea">Monitor your environment in real-time with our advanced AQMS featuring Temperature, CO₂, and Humidity sensors.
-                        Equipped with USB-C power for seamless smart integration and accurate air quality tracking</p>
-                        <!-- <h2>₹ 9,999</h2> -->
-                      <a href="touch.html" ><button class="product-button">Buy now</button></a>
-                     
-                </div>
-            </section>
-           
-    
-            <section class="product_2">
-                <div class="product_2_left">
-                    <img src ="assets/aqms_without_wifi_2.png" alt ="image found">
-                   
-                </div>
-               
-                <div class="product_2_right">
-                 <h1 class="ph">Prana 751</h1>
-                <h3>Indoor Air Quality Monitoring System</h3>
-                <p  class="pea">The IAQMS is a comprehensive air quality monitoring system designed to provide real-time data on various air pollutants. It is equipped with advanced sensors that measure  CO2, PM2.5, PM10, TVOCs, Temp., Relative Humidity and other harmful substances in the air. The system is user-friendly and can be easily integrated into existing infrastructure.</p>
-                <!-- <h2>₹ 14,999</h2> -->
-                <!-- <a href="contact-us.html">Buy now</a> -->
-                  <a href="touch.html" ><button class="product-button">Buy now</button></a>
-                </div>
-                
-                
-            </section>
-    
-            <section class ="product_3">
-                <div class="product_3_left">
-                    <img src ="assets/aqms_wifi.png" alt ="image found">
-                </div>
-                <div class="product_3_right">
-                    <h1 class="ph">Prana 781</h1>
-                    <h3>Indoor Air Quality Monitoring System With Wifi</h3>
-                    <p  class="pea">Wi-Fi in an IAQMS enables real-time wireless data transmission to cloud platforms or mobile apps. 
-                        Wi-Fi connectivity allows easy integration with IoT dashboards for live air quality insights.
-                        It is equipped with advanced sensors that measure CO2, PM2.5, PM10, TVOCs, Temp., Relative Humidity, Wi-Fi, USB.</p>
-                        <!-- <h2>₹ 19,999</h2> -->
-                        <!-- <a href="contact-us.html">Buy now</a> -->
-                          <a href="touch.html" ><button class="product-button">Buy now</button></a>
-                </div>
-            </section>
-
-            <section class ="product_4">
-                <div class="product_4_left">
-                    <img src ="assets/aqms-4.png" alt ="image found">
-                </div>
-                <div class="product_4_right">
-                    <h1 class="ph">Prana 720</h1>
-                    <h3>Indoor Air Quality Monitoring System With Wifi</h3>
-                    <p  class="pea"> Enables real-time wireless data transmission to cloud platforms or mobile apps. 
-                        Wi-Fi connectivity allows easy integration with IoT dashboards for live air quality insights.
-                        It is equipped with advanced sensors that measure CO2, PM2.5, PM10, TVOCs, Temp., Relative Humidity, Wi-Fi, USB C Type.</p>
-                        <!-- <h2>₹ 19,999</h2> -->
-                        <!-- <a href="contact-us.html">Buy now</a> -->
-                          <a href="touch.html" ><button class="product-button">Buy now</button></a>
-                </div>
-            </section>
-     
-            <section class ="product_5">
-                <div class="product_5_left">
-                    <img src ="assets/iaqms5.png" alt ="image found">
-                </div>
-                <div class="product_5_right">
-                    <h1 class="ph">Prana 725</h1>
-                    <h3>Indoor Air Quality Monitoring System</h3>
-                    <p  class="pea">This IAQMS enables real-time wireless data transmission to cloud platforms or mobile apps. 
-                        It is equipped with advanced sensors that measure CO2, PM2.5, PM10, Temp., Relative Humidity, Wi-Fi, USB C type.</p>
-                        <!-- <h2>₹ 19,999</h2> -->
-                        <!-- <a href="contact-us.html">Buy now</a> -->
-                          <a href="touch.html" ><button class="product-button">Buy now</button></a>
-                </div>
-            </section>
-            
+        <section class="product_1">
+          <div class="product_1_left">
+            <img src="assets/lol.png" alt="image found" />
+          </div>
+          <div class="product_1_right">
+            <h1 class="ph">Tec 111</h1>
+            <h3>Indoor Air Quality Monitoring System</h3>
+            <p class="pea">
+              Monitor your environment in real-time with our advanced AQMS
+              featuring Temperature, CO₂, and Humidity sensors. Equipped with
+              USB-C power for seamless smart integration and accurate air
+              quality tracking
+            </p>
+            <!-- <h2>₹ 9,999</h2> -->
+            <a href="touch.html"
+              ><button class="product-button">Buy now</button></a
+            >
+          </div>
         </section>
+
+        <section class="product_2">
+          <div class="product_2_left">
+            <img src="assets/aqms_without_wifi_2.png" alt="image found" />
+          </div>
+
+          <div class="product_2_right">
+            <h1 class="ph">Tec 131</h1>
+            <h3>Indoor Air Quality Monitoring System</h3>
+            <p class="pea">
+              The IAQMS is a comprehensive air quality monitoring system
+              designed to provide real-time data on various air pollutants. It
+              is equipped with advanced sensors that measure CO2, PM2.5, PM10,
+              TVOCs, Temp., Relative Humidity and other harmful substances in
+              the air. The system is user-friendly and can be easily integrated
+              into existing infrastructure.
+            </p>
+            <!-- <h2>₹ 14,999</h2> -->
+            <!-- <a href="contact-us.html">Buy now</a> -->
+            <a href="touch.html"
+              ><button class="product-button">Buy now</button></a
+            >
+          </div>
+        </section>
+
+        <section class="product_3">
+          <div class="product_3_left">
+            <img src="assets/aqms_wifi.png" alt="image found" />
+          </div>
+          <div class="product_3_right">
+            <h1 class="ph">Tec 141</h1>
+            <h3>Indoor Air Quality Monitoring System With Wifi</h3>
+            <p class="pea">
+              Wi-Fi in an IAQMS enables real-time wireless data transmission to
+              cloud platforms or mobile apps. Wi-Fi connectivity allows easy
+              integration with IoT dashboards for live air quality insights. It
+              is equipped with advanced sensors that measure CO2, PM2.5, PM10,
+              TVOCs, Temp., Relative Humidity, Wi-Fi, USB.
+            </p>
+            <!-- <h2>₹ 19,999</h2> -->
+            <!-- <a href="contact-us.html">Buy now</a> -->
+            <a href="touch.html"
+              ><button class="product-button">Buy now</button></a
+            >
+          </div>
+        </section>
+
+      
+
+        <section class="product_5">
+          <div class="product_5_left">
+            <img src="assets/iaqms5.png" alt="image found" />
+          </div>
+          <div class="product_5_right">
+            <h1 class="ph">Tec 151</h1>
+            <h3>Indoor Air Quality Monitoring System</h3>
+            <p class="pea">
+              This IAQMS enables real-time wireless data transmission to cloud
+              platforms or mobile apps. It is equipped with advanced sensors
+              that measure CO2, PM2.5, PM10, Temp., Relative Humidity, Wi-Fi,
+              USB C type.
+            </p>
+            <!-- <h2>₹ 19,999</h2> -->
+            <!-- <a href="contact-us.html">Buy now</a> -->
+            <a href="touch.html"
+              ><button class="product-button">Buy now</button></a
+            >
+          </div>
+        </section>
+      </section>
     </section>
 
     <div class="wrapper">
       <div class="wrapper-container">
-          <h2>SUITABLE FOR</h2>
-          <div class="card-subtitle-container">
-            <div class="card">
-      <img src="assets/s7.jpg" alt="Offices">
-      <div class="info">
-        <h1>Offices</h1>
-        <p>Foster a productive and healthy workspace to monitor indoor air quality for offices and workplace , focus, and overall performance.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="assets/s5.webp" alt="University">
-      <div class="info">
-        <h1>Schools and University</h1>
-        <p>Create a more healthier and sustainable environment for schools and universities</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="assets/s6.avif" alt="Hopsital">
-      <div class="info">
-        <h1>Homes</h1>
-        <p>Maintain a safe and comfortable living environment by monitoring indoor air quality to protect your family’s health and well-being every day.</p>
-      </div>
-    </div>
+        <h2>SUITABLE FOR</h2>
+        <div class="card-subtitle-container">
+          <div class="card">
+            <img src="assets/s7.jpg" alt="Offices" />
+            <div class="info">
+              <h1>Offices</h1>
+              <p>
+                Foster a productive and healthy workspace to monitor indoor air
+                quality for offices and workplace , focus, and overall
+                performance.
+              </p>
+            </div>
           </div>
-    
-      </div>
-    
-        </div>
 
+          <div class="card">
+            <img src="assets/s5.webp" alt="University" />
+            <div class="info">
+              <h1>Schools and University</h1>
+              <p>
+                Create a more healthier and sustainable environment for schools
+                and universities
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/s6.avif" alt="Hopsital" />
+            <div class="info">
+              <h1>Homes</h1>
+              <p>
+                Maintain a safe and comfortable living environment by monitoring
+                indoor air quality to protect your family’s health and
+                well-being every day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-  
+
     <script>
-    AOS.init({
-        duration: 1000,  // Animation duration in milliseconds
-        once: false,     // Animation should happen every time the element comes into view
-        offset: 100,     // Offset from the original trigger point
-    });
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: false, // Animation should happen every time the element comes into view
+        offset: 100, // Offset from the original trigger point
+      });
 
       // Create an array of image paths
-  const imagePaths = [];
-  
-  for (let i = 1; i <= 35; i++) {
-    imagePaths.push(`assets/images/i${i}.png`);
-  }
+      const imagePaths = [];
 
-  // Initialize ThreeSixty    
-  const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
-    image: imagePaths,
-    width: 570,
-    height: 440,
-    draggable: true,
-    swipeable: true
-  });
+      for (let i = 1; i <= 35; i++) {
+        imagePaths.push(`assets/images/i${i}.png`);
+      }
 
-  // Start rotating
-  // threesixty.play();
+      // Initialize ThreeSixty
+      const threesixty = new ThreeSixty(document.getElementById("threesixty"), {
+        image: imagePaths,
+        width: 570,
+        height: 440,
+        draggable: true,
+        swipeable: true,
+      });
 
+      // Start rotating
+      // threesixty.play();
 
+      const data = [
+        {
+          index: 1,
+          parameter: "CO₂ (Carbon Dioxide)",
+          accuracy: "±75 ppm",
+          range: "400 – 5000 ppm",
+        },
+        {
+          index: 2,
+          parameter: "PM2.5",
+          accuracy: "±10 µg/m³ or 10%",
+          range: "0 – 999 µg/m³",
+        },
+        {
+          index: 3,
+          parameter: "PM10",
+          accuracy: "±10 µg/m³ or 10%",
+          range: "0 – 999 µg/m³",
+        },
+        {
+          index: 4,
+          parameter: "TVOC (Total VOCs)",
+          accuracy: "±0.2 mg/m³",
+          range: "0.2 – 10 mg/m³",
+        },
+        {
+          index: 5,
+          parameter: "Temperature",
+          accuracy: "±1°C",
+          range: "-10°C to 85°C",
+        },
+        {
+          index: 6,
+          parameter: "Relative Humidity",
+          accuracy: "±5% RH",
+          range: "5% – 100% RH",
+        },
+      ];
 
-    const data = [
-  { index: 1, parameter: "CO₂ (Carbon Dioxide)", accuracy: "±75 ppm", range: "400 – 5000 ppm" },
-  { index: 2, parameter: "PM2.5", accuracy: "±10 µg/m³ or 10%", range: "0 – 999 µg/m³" },
-  { index: 3, parameter: "PM10", accuracy: "±10 µg/m³ or 10%", range: "0 – 999 µg/m³" },
-  { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±0.1 mg/m³", range: "0.1 – 10 mg/m³" },
-  { index: 5, parameter: "Temperature", accuracy: "±1°C", range: "-20°C to 85°C" },
-  { index: 6, parameter: "Relative Humidity", accuracy: "±5% RH", range: "0% – 100% RH" },
-];
+      const tableBody = document.querySelector("#specTable tbody");
 
-const tableBody = document.querySelector("#specTable tbody");
-
-data.forEach(row => {
-  const tr = document.createElement("tr");
-  tr.innerHTML = `
+      data.forEach((row) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
     <td>${row.index}</td>
     <td>${row.parameter}</td>
     <td>${row.accuracy}</td>
     <td>${row.range}</td>
   `;
-  tableBody.appendChild(tr);
-});
+        tableBody.appendChild(tr);
+      });
 
+      var cursor = document.querySelector("#cursor");
 
- var cursor = document.querySelector("#cursor");
-
-document.addEventListener("mousemove", function (dets) {
-  gsap.to(cursor, {
-    x: dets.x ,
-    y: dets.y,
-    duration: 0.5,
-    // ease: "power1.out",
-    ease: "back.out"
-    
-  });
-})
-    
+      document.addEventListener("mousemove", function (dets) {
+        gsap.to(cursor, {
+          x: dets.x,
+          y: dets.y,
+          duration: 0.5,
+          // ease: "power1.out",
+          ease: "back.out",
+        });
+      });
     </script>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
-
-
-<!-- <script>
+    <!-- <script>
   const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
   // image: 'https://s3.eu-central-1.amazonaws.com/threesixty.js/watch.jpg',
   image: 'assets/product_3d.png',
@@ -543,9 +626,5 @@ document.addEventListener("mousemove", function (dets) {
 
 threesixty.play();
 </script> -->
-
-
-</body>
+  </body>
 </html>
-
-

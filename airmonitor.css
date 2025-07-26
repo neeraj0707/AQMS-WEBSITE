@@ -13,11 +13,13 @@
     height: 75vh; 
     display: flex;
     margin: auto;
-    align-items: start;
+    align-items: center;
     padding-top: 100px;
     flex-direction: column;
     gap: 5px;
     font-family: "Figtree", sans-serif;
+    justify-content: center;
+
 }
 .air-monitor-banner .banner-text {
     color: white;

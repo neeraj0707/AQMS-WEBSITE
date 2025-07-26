@@ -962,7 +962,7 @@ tr:hover {
   font-size: 31px;
   font-weight: 500;
   margin-bottom: 38px;
-  color: rgb(102, 101, 101);
+  color: rgb(57, 57, 60);
   
 }
 
@@ -1466,7 +1466,7 @@ tr:hover {
   font-family: "Figtree", sans-serif;
 }
 .image-section img {
-    width: 100%;
+    width: 60%;
     height: auto;
    
 }
@@ -1477,9 +1477,11 @@ tr:hover {
 }
 .image-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 
@@ -1501,15 +1503,16 @@ tr:hover {
   cursor: pointer;
   text-decoration: none;
 }
-.btn-primary a{
+.btn-primary {
   color: white;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .btn-primary:hover {
   background-color: #0056b3;
 }
+
 
 .slider-container {
   width: 40%;
@@ -1574,8 +1577,8 @@ tr:hover {
   transform: rotate(180deg);
 }
 .mission-section{
-  width: 70%;
-  padding-top: 150px;
+  width: 80%;
+  padding-top: 70px;
   padding-bottom: 50px;
 }
 .mission-section h2 {
@@ -1593,9 +1596,7 @@ tr:hover {
   margin-bottom: 30px;
   padding-top: 30px;
 }
-.mission-section h2,p{
-  color: white;
-}
+
 
 #know-more-link{
   word-spacing: 5px;
@@ -1679,6 +1680,7 @@ tr:hover {
 
 }
 
+
 .service-card:hover {
   transform: translateY(-5px);
 }
@@ -1689,6 +1691,13 @@ tr:hover {
   object-fit: contain;
   margin-bottom: 20px;
 }
+#s2 {
+   height: 250px;      /* Increase height */
+  width: 100%;  
+ 
+  object-fit: cover; /* Optional override */
+}
+
 
 
 .service-card h5 {
