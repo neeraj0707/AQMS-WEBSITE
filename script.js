@@ -674,27 +674,27 @@ setInterval(showNextImage, 5000); // Change every 3 seconds
 
 
 
-  const data = [
-  { index: 1, parameter: "CO₂ (Carbon Dioxide)", accuracy: "±(50 ppm + 3% of reading)", range: "400 – 5000 ppm" },
-  { index: 2, parameter: "PM2.5", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
-  { index: 3, parameter: "PM10", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
-  { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±0.2%", range: "0.2 – 10 mg/m³" },
-  { index: 5, parameter: "Temperature", accuracy: "±0.5°C", range: "-10°C to 85°C" },
-  { index: 6, parameter: "Relative Humidity", accuracy: "±3% RH", range: "5% – 100% RH" },
-];
+//   const data = [
+//   { index: 1, parameter: "CO₂ (Carbon Dioxide)", accuracy: "±(50 ppm + 3% of reading)", range: "400 – 5000 ppm" },
+//   { index: 2, parameter: "PM2.5", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
+//   { index: 3, parameter: "PM10", accuracy: "±10 µg/m³ or 10%", range: "0 – 1000 µg/m³" },
+//   { index: 4, parameter: "TVOC (Total VOCs)", accuracy: "±0.2%", range: "0.2 – 10 mg/m³" },
+//   { index: 5, parameter: "Temperature", accuracy: "±0.5°C", range: "-10°C to 85°C" },
+//   { index: 6, parameter: "Relative Humidity", accuracy: "±3% RH", range: "5% – 100% RH" },
+// ];
 
-const tableBody = document.querySelector("#specTable tbody");
+// const tableBody = document.querySelector("#specTable tbody");
 
-data.forEach(row => {
-  const tr = document.createElement("tr");
-  tr.innerHTML = `
-    <td>${row.index}</td>
-    <td>${row.parameter}</td>
-    <td>${row.accuracy}</td>
-    <td>${row.range}</td>
-  `;
-  tableBody.appendChild(tr);
-});
+// data.forEach(row => {
+//   const tr = document.createElement("tr");
+//   tr.innerHTML = `
+//     <td>${row.index}</td>
+//     <td>${row.parameter}</td>
+//     <td>${row.accuracy}</td>
+//     <td>${row.range}</td>
+//   `;
+//   tableBody.appendChild(tr);
+// });
 
 
 
